@@ -55176,9 +55176,12 @@ text-shadow: 1px 1px 2px;
 }
 
 .just-betwen {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: max-content;
+ display: flex;
+ flex-wrap: nowrap;
+ gap: 20px;
+ margin-right: 0;
+ margin-left: 0;
 }
 
 .grid-form-buttons{
