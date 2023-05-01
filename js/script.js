@@ -1,22 +1,27 @@
 $("#btn-popup").click(()=> {
-        $(".popup").toggleClass("hidden")
-}) 
-$("#btn-popup_anketa").click(()=> {
-        $(".popup").toggleClass("hidden")
-}) 
-
-$("#btn-close").click(()=> {
-    $(".popup").toggleClass("hidden")
-})
-$("#cancel").click(()=> {
-    $(".popup").toggleClass("hidden")
+        $(".popup").fadeIn(700);
+        $(".popup").css("display", "flex");
+        $("body").css("overflow-y", "hidden");
 })
 
-$("#btn-popup_01").click(()=> {
-        $(".popup").toggleClass("hidden")
-}) 
-$("#btn-close_01").click(()=> {
-    $(".popup").toggleClass("hidden")
+$("#btn-close, #cancel").click(()=> {
+    $(".popup").fadeOut(500, function() {
+        $(".popup").css("display", "none");
+        $("body").css("overflow-y", "auto");
+    });
+})
+
+$("#btn-popup1").click(()=> {
+        $(".popup").fadeIn(700);
+        $(".popup").css("display", "flex");
+        $("body").css("overflow-y", "hidden");
+})
+
+$("#btn-close, #cancel").click(()=> {
+    $(".popup").fadeOut(500, function() {
+        $(".popup1").css("display", "none");
+        $("body").css("overflow-y", "auto");
+    });
 })
 
 
