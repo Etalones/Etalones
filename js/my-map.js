@@ -7,7 +7,7 @@
   let marker = new google.maps.Marker({
     position: pos,
     map: Mymap,
-    title: "💶Заработная плата от 25€/м²🛏 Жильё Бесплатно",
+    title: "💶Заработная плата от 25€/м²🛏 Жильё Бесплатно ",
     icon: "../images/for_maps/icon_droplet_25€-m2.png"
   });window.initMap = initMap;
 
