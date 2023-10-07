@@ -1,0 +1,374 @@
+:root {
+  --text-color: #c0392b;
+  --text-shadow:#ffffff49;
+}
+body {
+font-family: Comfortaa,sans-serif!important;
+  background-color: #f2f2f2;
+}
+
+.linkForNav {
+  text-decoration: none !important;
+}
+.scrolled {
+   background: rgb(97, 28, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(97, 28, 21, 0.7) 0%,
+    rgba(225, 42, 24, 0.7) 100%
+  );
+  transition: background-color 0.5s ease-in-out;}
+.customClr{
+  color: var(--text-color);
+}
+  .customItem {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.customItem1 {
+  color: #000000;
+  text-shadow: 1px 1px var(--text-shadow);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 34px;
+  letter-spacing: 2px;
+}
+.backgroundGr {
+  background: rgb(97, 28, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(97, 28, 21, 1) 0%,
+    rgba(225, 42, 24, 1) 100%
+  );
+  transition: background-color 0.5s ease-in-out;
+}
+
+.backgroundE12a18 {
+  background: #e12a18;
+}
+.text-cstm-red{
+  color: #e12a18;
+}
+.customBGAll::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/principal/photo_2023-10-02_14-43-48.jpg") no-repeat
+    center center;
+  background-size: 100%;
+  background-position: 20% 60%;
+  opacity: 0.2; /* По желанию, задайте прозрачность */
+  z-index: -1; /* Поместите псевдоэлемент под основным контентом */
+}
+.customBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/principal/man.webp") no-repeat center center;
+  background-size: 20%;
+  background-position: 15% 100%;
+  opacity: 1; /* По желанию, задайте прозрачность */
+  z-index: 1; /* Поместите псевдоэлемент под основным контентом */
+}
+.customBG::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/principal/woman.webp") no-repeat center center;
+  background-size: 20%;
+  background-position: 85% 100%;
+  opacity: 1; /* По желанию, задайте прозрачность */
+  z-index: -1; /* Поместите псевдоэлемент под основным контентом */
+}
+
+.customH1 {
+  color: #e12a18;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 10px 14px;
+ font-family: Comfortaa,sans-serif!important;
+}
+.customH3 {
+  color: #8e44ad;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  font-family: Comfortaa,sans-serif!important;
+}
+.customH32 {
+  color: #e12a18;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  font-family: "Nunito", sans-serif;
+}
+.customBgSubscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/BG/BG_Etalones.png);
+  background-size: cover;
+  opacity: 0.5; /* Устанавливаем прозрачность для фонового изображения */
+  z-index: -1;
+}
+
+/* test */
+
+.card {
+  width: 100%;
+  height: max-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.card .backgroundEffect {
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
+.card:hover {
+
+  transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+.card:hover .backgroundEffect {
+  bottom: 0;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #e12a18;
+  animation: popBackground 0.3s ease-in;
+}
+
+@keyframes popBackground {
+  0% {
+    height: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  50% {
+    height: 80px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+  }
+
+  75% {
+    height: 160px;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+  }
+
+  100% {
+    height: 320px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+}
+
+.card .pic {
+  position: relative;
+}
+
+.card .pic img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 70px;
+  background-color: #e12a18;
+
+  position: absolute;
+  bottom: 0px;
+  transition: all ease;
+}
+
+.card .date .day {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card .date .month,
+.card .date .year {
+  font-size: 10px;
+}
+
+.card .text-muted {
+  font-size: 12px;
+}
+
+
+
+.card .content {
+  padding: 0 20px;
+}
+
+.card .content .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #e12a18;
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+}
+
+.card:hover .content .btn {
+  background: #fff;
+  color: #e12a18;
+  box-shadow: #0000001a 0px 3px 5px;
+}
+
+.card .content .btn .fas {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.card .content .foot .admin {
+  color: #e12a18;
+  font-size: 12px;
+}
+
+.card:hover .content .foot .admin {
+  color: #fff;
+}
+
+.card .content .foot .icon {
+  font-size: 12px;
+}
+
+/* 17:49 */
+
+.beforeCustom::before {
+  content: "";
+  position: absolute;
+  left: 75%;
+
+  width: 50%;
+  height: 50%;
+  background: url("../img/principal/man.webp") no-repeat center center;
+  background-size: 20%;
+  background-position: 15% 100%;
+  opacity: 1; /* По желанию, задайте прозрачность */
+  z-index: 5; /* Поместите псевдоэлемент под основным контентом */
+}
+
+/* --------------Social---------------- */
+.bgSocial{
+    background-color: #252525;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  padding: 15px 0;
+  margin: 0;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+ transform: scale(1.2);
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 100%;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+
+/* ------------Informatsiya------------ */
