@@ -250,53 +250,57 @@
         >
 
         
-  <form class="row g-3 align-items-center">
-    <div class="col-md-3">
-      <div >
-        <input
-          type="text"
-          class="form-control rounded-pill"
-          placeholder="Введите ваше имя"
-        />
-      </div>
+   <form class="row g-3 align-items-center" method="POST" data-netlify="true" name="contact" >
+  <div class="col-md-3">
+    <div>
+      <input
+        type="text"
+        class="form-control rounded-pill"
+        placeholder="Введите ваше имя"
+        name="fio" required />
     </div>
-    <div class="col-md-3">
-      <div >
-        <input
-          type="tel"
-          class="form-control rounded-pill"
-          placeholder="Номер телефона"
-        />
-      </div>
+  </div>
+  <div class="col-md-3">
+    <div>
+      <input
+        type="tel"
+        class="form-control rounded-pill"
+        placeholder="Номер телефона"
+        name="tel" required />
     </div>
-    <div class="col-md-3">
-      <div >
-        <select class="form-select rounded-pill" aria-label="Default select example">
-          <option selected>Время звонка</option>
-          <option value="1">8:00-10:00</option>
-          <option value="2">10:00-12:00</option>
-          <option value="3">12:00-14:00</option>
-        </select>
-      </div>
+  </div>
+  <div class="col-md-3">
+    <div>
+      <select
+        class="selectpicker form-control rounded-pill"
+        data-style="btn-outline-secondary"
+        data-size="3"
+        title="Время звонка"
+        name="Время звонка" required>
+        <option value="8:00-10:00">8:00-10:00</option>
+        <option value="10:00-12:00">10:00-12:00</option>
+        <option value="12:00-14:00">12:00-14:00</option>
+        <option value="14:00-16:00">14:00-16:00</option>
+        <option value="6:00-18:00">16:00-18:00</option>
+        <option value="18:00-20:00">18:00-20:00</option>
+      </select>
     </div>
-    <div class="col-md-3">
-      <button
-        type="button"
-        class="btn btn-outline-warning rounded-pill btn-lg"
-        style="
-          background: rgb(97, 28, 21);
-          background: linear-gradient(
-            0deg,
-            rgba(97, 28, 21, 1) 0%,
-            rgba(225, 42, 24, 1) 100%
-          );
-        "
-        data-mdb-ripple-color="#000000"
-      >
-        Записаться
-      </button>
-    </div>
-  </form>
+  </div>
+  <div class="col-md-3">
+    <input
+      style="
+        background: rgb(97, 28, 21);
+        background: linear-gradient(
+          0deg,
+          rgba(97, 28, 21, 1) 0%,
+          rgba(225, 42, 24, 1) 100%
+        );
+      "
+      class="btn btn-outline-warning rounded-pill btn-lg"
+      type="submit"
+      value="Записаться" />
+  </div>
+</form>
 </div>
 
       </section>
@@ -596,9 +600,10 @@ src="../../img/work/slide-3.jpg"                  alt="" />
             </div>
             <div class="col-lg-6 d-lg-block my-auto">
               <form
-                action=""
+                name="email" method="POST" data-netlify="true"
                 class="d-flex flex-column text-white align-items-start gap-3">
                 <input
+                name="Почта"
                   type="email"
                   placeholder="ваша почта@gmail.com"
                   class="rounded-4 w-50" />
@@ -622,8 +627,8 @@ src="../../img/work/slide-3.jpg"                  alt="" />
                     checked=""
                     required="" /><label
                     class="px-3"
-                    for="Согласие на получение электронных писем"
-                    >Согласие на получение электронных писем</label
+                    for="Получай регулярные оповещения о новых предложениях работы"
+                    >Получай регулярные оповещения о новых предложениях работы</label
                   >
                 </div>
                 <div class="d-flex">
@@ -635,15 +640,21 @@ src="../../img/work/slide-3.jpg"                  alt="" />
                     required="" /><label
                     class="px-3"
                     for="Согласие на получение электронных писем"
-                    >Согласие на получение электронных писем</label
+                    >Получай регулярные уведомления о актуальных новостях</label
                   >
                 </div>
-                <button
-                  type="button"
-                  class="btn btn-outline-warning rounded-pill btn-lg my-4"
-                  data-mdb-ripple-color="#000000">
-                  Присоедениться
-                </button>
+                <input
+      style="
+        background: rgb(97, 28, 21);
+        background: linear-gradient(
+          0deg,
+          rgba(97, 28, 21, 1) 0%,
+          rgba(225, 42, 24, 1) 100%
+        );
+      "
+      class="btn btn-outline-warning rounded-pill btn-lg"
+      type="submit"
+      value="Записаться" />
               </form>
             </div>
           </div>
