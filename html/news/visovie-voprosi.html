@@ -11,16 +11,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <script
       defer
-      src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+      src="../../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../../css/style1.css" />
-    <link rel="stylesheet" href="../../css/theme-elements.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800&amp;subset=latin-ext"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext"
-      rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+
     <script defer src="../../js/scrollNavbar.js"></script>
             <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon//favicon-32x32.png">
@@ -29,17 +25,19 @@
     <title>Etalones</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top backgroundGr">
+    <nav class="navbar navbar-expand-lg  sticky-top backgroundGr">
       <div class="container">
         <a class="navbar-brand" href="../../index.html"
           ><img class="w-50" src="../../img/logoWhite.png" alt="logo"
         /></a
         >
-         <button
-        style="    
-    
+        <button
+        style="    position: absolute;
+    top: 1rem;
+    right: 1rem;
     color: white;
-    border: 0;"
+    border: 0;
+    "
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -47,7 +45,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Переключатель навигации">
-          <i class="bi bi-list text-white fs-1"></i>
+          <i class="bi bi-list text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto gx-1">
@@ -56,15 +54,15 @@
                 class="nav-link customItem dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-current="page"
-                href="../../index.html"
+                href="../vakansii.html"
                 >Вакансии</a
               >
              <ul class="dropdown-menu ">
-                <li class="dropdown-item "><a class="text-black linkForNav" href="./html/./vakansii.html#armaturaL1">Арматура</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#bruschadkaV1">Брусчатка</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#muL1">Мастер-универсал</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#dveriL1">Работа с деревом</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#demontazD1">Демонтаж</a></li>
+                <li class="dropdown-item "><a class="text-black linkForNav" href="../vakansii.html#armaturaL1">Арматура</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#bruschadkaV1">Брусчатка</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#muL1">Мастер-универсал</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#dveriL1">Работа с деревом</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#demontazD1">Демонтаж</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -95,9 +93,9 @@
         <div class="container">
           <div class="container">
             <div class="container-fluid d-flex justify-content-between">
-              <h1 class="fw-bold text-cstm-red my-5">Полезно</h1>
+             <h6 class="fw-bold text-cstm-red my-5 h1">Новости</h6>
               <a
-                href="../kategogy/driver.html"
+              href="../news.html"
                 type="button"
                 class="btn btn-outline-warning btn-lg my-5"
                 style="
@@ -112,149 +110,117 @@
                 "
                 data-mdb-ripple-color="#000000">
                 <i class="bi bi-box-arrow-in-left text-warning"></i> Вернуться к
-                статьям
+                новостям
               </a>
             </div>
           </div>
 
-          <div class="background-white p-40">
-            <div class="row no-margin">
-              <div class="col-lg-6">
-                <img
-                  class="container"
-                  src="../../img/drivers/slide-1.jpeg"
-                  alt="В Польше рекордно низкие цены на ж/д билеты!" />
-                <div class="data">18.09.2023</div>
-              </div>
-              <div class="col-lg-6">
-                <h2 class="mb-15 text-cstm-red">
-                  Штрафы за превышение скорости в Польше в 2023 г.
-                </h2>
-              </div>
-            </div>
-            <div
-              class="trescartykulu"
-              style="user-select: none !important; margin-top: 20px">
-              <p>
-                Превышение скорости – наиболее частое нарушение ПДД в любой
-                из&nbsp;стран.<br />И эта информация очень пригодится тем, кто
-                впервые въехал на территорию Евросоюза: штрафы за превышение
-                скорости здесь высокие, а в Польше нарушителей ожидают еще и
-                штрафные баллы. За любовь к быстрой езде можно заплатить от 50
-                до 5000 zł., а в некоторых случаях&nbsp;лишиться водительских
-                прав.
-              </p>
-              <h2 class="">Штрафы за превышение скорости в Польше в 2023 г.</h2>
-              <p>
-                Размер взыскания&nbsp;<a
-                  href="https://rankomat.pl/samochod/taryfikator-mandatow-ile-zaplaca-kierowcy"
-                  >напрямую зависит от тяжести нарушения</a
-                >, а за повторное нарушение нужно будет заплатить вдвойне.
-                Повторным считается нарушение, совершенное в течение 2 лет от
-                момента совершения 1-го.
-              </p>
-              <p>Так, если вы превысили скорость&nbsp;</p>
-              <ul>
-                <li>
-                  до 10 км/ч, размер штрафа составляет 50 zł и 1 штрафной балл;
-                </li>
-                <li>на 11–15 км/ч -&nbsp;100 zł и 2 штрафных балла;</li>
-                <li>на 16–20 км/ч -&nbsp;200 zł и 3 штрафных балла;</li>
-                <li>на 21–25 км/ч - 300 zł и 5 штрафных баллов;</li>
-                <li>на 26–30 км/ч -&nbsp;400 zł и 7 штрафных баллов;</li>
-                <li>
-                  на 31–40 км/ч - 800 zł и 10 штрафных баллов (1600 zł при
-                  повторном нарушении);
-                </li>
-                <li>
-                  на 41–50 км/ч -&nbsp;1000 zł и 11 штрафных баллов (2000 zł -
-                  при повторном нарушении);
-                </li>
-                <li>
-                  на 51–60 км/ч - 1500 zł и 13 штрафных баллов (3000 zł - при
-                  повторном нарушении);
-                </li>
-                <li>
-                  на 61–70 км/ч - 2000 zł и 14 штрафных баллов (4000 zł - при
-                  повторном нарушении);
-                </li>
-                <li>
-                  свыше 70 км/ч - 2500 zł и 15 штрафных баллов (5000 zł - при
-                  повторном нарушении).
-                </li>
-              </ul>
-              <p>
-                Проверить наличие штрафов можно<a
-                  href="https://ebok.canard.gitd.gov.pl/ebok/views/logowanie/logowanie.xhtml"
-                  >&nbsp;на сайте</a
-                >&nbsp;Главного Инспектората Дорожного Транспорта (Główny
-                Inspektorat Transportu Drogowego - государственное учреждение,
-                регулирующее&nbsp;дорожный транспорт Польши и все процедуры,
-                связанные с ним).
-              </p>
-              <p>
-                Помните, что штрафные баллы и штрафы начисляются независимо от
-                гражданства водителя. Незнание правил не освобождает вас от
-                ответственности, поэтому, чтобы не нарушать скоростной режим,
-                нужно знать лимиты&nbsp;скорости, определяемые&nbsp;<a
-                  href="https://lexlege.pl/prawo-o-ruchu-drogowym/art-20/"
-                  >Prawo o ruchu drogowym в Ст. 20 и 21</a
-                >.
-              </p>
-              <h2>Допустимые лимиты скорости на дорогах Польши в 2023 г.:</h2>
-              <ul>
-                <li>50 км/ч – в населенных пунктах;</li>
-                <li>20 км/ч – в жилых зонах (дворы и т.п.).</li>
-              </ul>
-              <p>За пределами населенных пунктов:</p>
-              <ul>
-                <li>140 км/ч – на автомагистралях;</li>
-                <li>120 км/ч – на дорогах с двойной проезжей частью;</li>
-                <li>
-                  100 км/ч – на скоростной дороге с одной проезжей частью и
-                  скоростной дороге с двумя проезжими частями, имеющей не менее
-                  двух полос движения в каждом направлении;
-                </li>
-                <li>90 км/ч – на остальных дорогах.</li>
-              </ul>
-              <h2>Кто может выписать штраф за превышение скорости в Польше:</h2>
-              <ul>
-                <li>полицейский;</li>
-                <li>таможня и страж граничный;</li>
-                <li>суд.</li>
-              </ul>
-              <h2>
-                Особенности получения штрафов за нарушения, зафиксированные
-                фоторадаром.
-              </h2>
-              <p>
-                В случае, если превышение скорости
-                зафиксировано&nbsp;камерой&nbsp;фиксации нарушений ПДД
-                (фоторадаром), владельцу транспортного средства будет отправлено
-                письмо с информацией о нарушении и просьбой идентифицировать
-                лицо, управляющее в момент нарушения транспортным средством (это
-                может быть либо водитель, либо лицо, которому он передал
-                транспортное средство).
-              </p>
-              <p>
-                Если владелец зарегистрирован в одной из стран Евросоюза, штраф
-                начисляется автоматически. В случае, если нарушитель не
-                зарегистрирован на территории Европейского Союза, у полиции
-                возникнут сложности с получением всей необходимой информации.
-              </p>
-              <ul></ul>
-              <p>
-                Все, указанные выше, нормы&nbsp;распространяются&nbsp;на обычные
-                легковые автомобили (в случае спецтранспорта, а также грузовых,
-                пассажирских перевозок существуют дополнительные нюансы,
-                изложенные в специальных регламентах).
-              </p>
-              <p>
-                Мы продолжаем вас информировать о действующих в Польше правилах:
-                не пропускайте наши обновления.
-              </p>
-            </div>
-          </div>
+ <div class="background-white p-40">
+    <div class="row no-margin">
+        <div class="col-lg-6">
+            <img class="col-8 w-100" src="../../img/news/viza-v-polshu.jpg" alt="Польская виза" />
+            <div class="data">18.09.2023</div>
+        </div>
+        <div class="col-lg-6">
+            <h2 class="mb-15 text-cstm-red">Визовые вопросы - общая информация</h2>
+            
+        </div>
+    </div>
+    <article class="article-area__article container" id="main-content">
+  
+  <div class="editor-content">
+    <h3>Типы виз</h3>
+    <div>
+      <p>Прежде чем подавать заявление на визу, вам придется выбрать тип визы:</p>
+      <p><strong class="text-primary">Аэропортовая транзитная виза (тип «A»)</strong></p>
+      <p>Этот тип визы следует выбрать, если вы планируете только транзит через международную зону аэропорта в Шенгенской зоне и путешествуете на основании паспорта одной из следующих стран:&nbsp;Афганистан, Бангладеш, Гана, Демократическая Республика Конго, Ирак, Иран, Нигерия, Пакистан, Сомали, Шри-Ланка, Эритрея и Эфиопия.</p>
+      <p><strong class="text-primary">Шенгенская виза (тип «С»)</strong></p>
+      <p>Это виза для лиц, планирующих пребывать в Польше или в других странах Шенгенской зоны максимум 90 дней в течение каждого 180-дневного периода. Это означает, что легальное пребывание в этой зоне возможно только в том случае, если за последние 180 дней вы пребывали в ней не больше 90 дней. <a href="https://ec.europa.eu/home-affairs/content/visa-calculator_en" class="btn btn-link">На веб-сайте Европейской Комиссии</a> вы можете найти специальный калькулятор для расчета продолжительности пребывания в странах Шенгенской зоны.</p>
+      <p>Заявление на получение шенгенской визы вы можете подавать в польское дипломатическое представительство, если:</p>
+      <ul>
+        <li>Польша является единственной страной назначения в течение вашей поездки в Шенгенскую зону;</li>
+        <li>Если вы посещаете более чем одну страну зоны, но Польша является основным местом посещения;</li>
+        <li>Если вам трудно определить, какая из стран Шенгенской зоны является основной страной назначения, но границу зоны вы впервые пересекаете в Польше.</li>
+      </ul>
+      <p>В исключительных случаях можно также оформить так называемую шенгенскую визу LTV, действительную только на территории отдельных стран Шенгенской зоны.</p>
+      <p><strong class="text-primary">Национальная виза (тип «D»)</strong></p>
+      <p>Заявление на эту визу следует подавать, если вы хотите оставаться в Польше более чем на 90 дней. Однако срок действия этой визы не может превышать 1 года. Вы должны выбрать заявление на получение национальной визы, если вы ходатайствуете о предоставлении убежища, репатриации или пользуетесь правами на основании «Карты поляка».</p>
+    </div>
+  </div>
+  <div class="editor-content">
+    <h3>Упрощенная процедура получения визы для членов семьи граждан ЕС</h3>
+    <div>
+      <p><strong class="text-primary">Кто может пользоваться процедурой:</strong></p>
+      <p>ЗАПОМНИТЕ! Эта процедура доступна лишь для членов семьи граждан ЕС, <strong class="text-danger">не</strong> имеющих польского гражданства или не проживающих в Польше постоянно.</p>
+      <p>Гражданами ЕС признаются:</p>
+      <ul>
+        <li>граждане государств-членов ЕС,</li>
+        <li>граждане Исландии, Лихтенштейна, Норвегии и Швейцарии.</li>
+      </ul>
+      <p>Членами семьи гражданина ЕС признаются:</p>
+      <ul>
+        <li>супруг/супруга;</li>
+        <li>прямой родственник гражданина ЕС по нисходящей линии или его супруга, в возрасте до 21 года, либо находящийся на иждивении гражданина ЕС или его супруга,</li>
+        <li>прямой родственник гражданина ЕС по восходящей линии или его супруга, находящийся на иждивении гражданина ЕС или его супруга.</li>
+      </ul>
+      <p><strong class="text-primary">На что дает право процедура:</strong></p>
+      <ul>
+        <li>Подача заявления на визу бесплатна.</li>
+        <li>Дипломатическое представительство примет ваше заявление без необходимости предварительной регистрации.</li>
+      </ul>
+      <p><strong class="text-primary">Какие документы требуются:</strong></p>
+      <ul>
+        <li>Распечатанное и подписанное заявление о выдаче визы (заполненное на сайте <a href="http://www.e-konsulat.gov.pl/" class="btn btn-link">e-Konsulat</a>)</li>
+        <li>Недавняя цветная фотография размером 3,5 x 4,5 см,</li>
+        <li>Действительный паспорт,</li>
+        <li>документ, подтверждающий родство с гражданином ЕС (напр., свидетельство о браке, свидетельство о рождении);</li>
+        <li>документ, подтверждающий, что вы сопровождаете гражданина ЕС или едете к нему.</li>
+      </ul>
+      <p><strong class="text-primary">Отказ в выдаче визы:</strong></p>
+      <p>Основанием для отказа в выдаче визы могут быть исключительно:</p>
+      <ul>
+        <li>внесение в список лиц, пребывание которых в Польше является нежелательным,</li>
+        <li>негативное заключение визовых органов, которые считают, что ваше пребывание в стране может представлять угрозу для национальной обороны или безопасности или для общественной безопасности, порядка и здоровья.</li>
+      </ul>
+      <p>Отказ в выдаче визы консулом имеет форму решения. Решение об отказе в выдаче визы такого типа можно обжаловать в Министерстве иностранных дел.</p>
+    </div>
+  </div>
+  <div class="editor-content">
+    <h3>Биометрические данные</h3>
+    <div>
+      <p>При подаче заявления на визу у вас будут взяты биометрические данные: фотография при заявлении о национальной визе или фотография вместе с отпечатками пальцев при заявлении о шенгенской визе.</p>
+      <p>Если в течение последних 59 месяцев вы подавали заявление о шенгенской визе и были взяты ваши отпечатки пальцев, вам больше не нужно будет их сдавать – система автоматически перенесет ваши данные.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>От обязанности сдать отпечатки пальцев освобождаются следующие лица:</p>
+      <ul>
+        <li>дети младше 12 лет;</li>
+        <li>лица, у которых физически невозможно взять отпечатки пальцев (напр. например, из-за отсутствия пальцев или их временной травмы);</li>
+        <li>главы государств и правительств, члены национальных правительств в сопровождении супругов и членов официальных делегаций, приглашаемые в официальных целях;</li>
+        <li>монархи и старшие по званию члены королевской семьи, приглашаемые в официальных целях.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="editor-content">
+    <h3>Персональные данные</h3>
+    <div>
+      <p>Ответственным органом по обработке данных, содержащихся в визовой информационной системе (ВИС), является Центральный технический орган Национальной информационной системы Главного управления Национальной полиции, ул. Пулавска 148/150 (ul. Puławska 148/150), 02-624 Варшава, Польша.</p>
+      <p>Жалобы касательно защиты персональных данных рассматривает Генеральный инспектор по защите персональных данных, ул. Ставки 2 (ul. Stawki 2), 00-193 Варшава, Польша.</p>
+    </div>
+  </div>
+  <div class="legal-basis">
+    <h3>Temei juridic</h3>
+    <p class="title">Ustawa z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin </p>
+    <p class="title">Ustawa z dnia 12 grudnia 2013 r. o cudzoziemcach </p>
+    <p class="title">Ustawa z dnia 25 czerwca 2015 r. Prawo konsularne </p>
+  </div>
+  <div class="text-muted py-5">
+<p >Источник</p>
+  <a href="https://www.gov.pl/web/republicamoldova/visas-general-issues">https://www.gov.pl/web/republicamoldova/visas-general-issues</a>
+  </div>
+</article>
+
+</div>
+
+
         </div>
       </section>
       <section class="container-fluid" style="background-color: white">
@@ -347,7 +313,7 @@
                   говорят: осведомленность - лучшее оружие.
                 </p>
                 <a
-                href="../html/informatia.html"
+                href="../../html/informatia.html"
                   type="button"
                   class="btn btn-outline-warning rounded-pill btn-lg"
                   data-mdb-ripple-color="#000000">
@@ -392,7 +358,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/parketL2.jpg"
+                    src="../../img/vacansii/parketL2.jpg"
                     class="img-fluid" />
                   <a href="#!" name="parketL2">
                     <div
@@ -412,7 +378,7 @@
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Берлин (Германия)
                   </p>
                   <p><i class="bi bi-cash  text-cstm-red"></i> 2 300<i class="bi bi-currency-euro"></i> netto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 4 Мужчины <a href="./vakansii/parketL2.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 4 Мужчины <a href="../vakansii/parketL2.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -424,7 +390,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/dveriL1.jpg"
+                    src="../../img/vacansii/dveriL1.jpg"
                     class="img-fluid" />
                   <a href="#!" name="dveriL1">
                     <div
@@ -444,7 +410,7 @@
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Гамбург (Германия)
                   </p>
                   <p><i class="bi bi-cash  text-cstm-red"></i> 2 500<i class="bi bi-currency-euro"></i> netto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 2 Мужчины <a href="./vakansii/dveriL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 2 Мужчины <a href="../vakansii/dveriL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -456,7 +422,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/muL1.jpg"
+                    src="../../img/vacansii/muL1.jpg"
                     class="img-fluid" />
                   <a href="#!" name="myL1">
                     <div
@@ -476,7 +442,7 @@
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Еупен (Бельгия)
                   </p>
                   <p><i class="bi bi-cash  text-cstm-red"></i> от 2 500<i class="bi bi-currency-euro"></i> netto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 3 Мужчины <a href="../html/vakansii/muL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 3 Мужчины <a href="../vakansii/muL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -498,9 +464,7 @@
         ">
         <div class="container-fluid d-flex">
           <div class="row container mx-auto text-white">
-            <h2 class="pt-5 pb-2 fs-1">
-              Активируй бесплатную подписку уже сейчас
-            </h2>
+            <h2 class="pt-5 pb-2 fs-1">Активируй бесплатную подписку уже сейчас</h2>
             <div class="container pr-5 col-lg-6">
               <div class="container mb-5 w-100">
                 <p class="mt-5">
@@ -515,6 +479,7 @@
                 action=""
                 class="d-flex flex-column text-white align-items-start gap-3">
                 <input
+                required
                   type="email"
                   placeholder="ваша почта@****.com"
                   class="rounded-4 w-50" />

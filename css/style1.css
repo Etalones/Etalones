@@ -10,7 +10,7 @@ font-family: Comfortaa,sans-serif!important;
 .linkForNav {
   text-decoration: none !important;
 }
-.scrolled {
+.scrolled {opacity: 0.5;
    background: rgb(97, 28, 21);
   background: linear-gradient(
     0deg,
@@ -18,22 +18,30 @@ font-family: Comfortaa,sans-serif!important;
     rgba(225, 42, 24, 0.7) 100%
   );
   transition: background-color 0.5s ease-in-out;}
-.customClr{
+.scrolled:hover{
+  opacity: 1;
+  background-color: #b50000;
+}
+  .customClr{
   color: var(--text-color);
 }
   .customItem {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 .customItem1 {
   color: #000000;
-  text-shadow: 1px 1px var(--text-shadow);
-  font-size: 20px;
+  text-shadow: 1px 1px 2px  var(--text-shadow);
+  font-size: 18px;
   font-weight: 600;
   padding: 10px 34px;
   letter-spacing: 2px;
+}
+.customItem1:hover{
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px  black;
 }
 .backgroundGr {
   background: rgb(97, 28, 21);
@@ -63,7 +71,7 @@ font-family: Comfortaa,sans-serif!important;
   background-size: 100%;
   background-position: 20% 60%;
   opacity: 0.2; /* По желанию, задайте прозрачность */
-  z-index: -1; /* Поместите псевдоэлемент под основным контентом */
+  z-index: -2; /* Поместите псевдоэлемент под основным контентом */
 }
 .customBG::before {
   content: "";
@@ -76,7 +84,7 @@ font-family: Comfortaa,sans-serif!important;
   background-size: 20%;
   background-position: 15% 100%;
   opacity: 1; /* По желанию, задайте прозрачность */
-  z-index: 1; /* Поместите псевдоэлемент под основным контентом */
+  z-index: -1; /* Поместите псевдоэлемент под основным контентом */
 }
 .customBG::after {
   content: "";

@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <script
       defer
-      src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+      src="../../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../../css/style1.css" />
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -25,15 +25,19 @@
     <title>Etalones</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top backgroundGr">
+   <nav class="navbar navbar-expand-lg  sticky-top backgroundGr">
       <div class="container">
         <a class="navbar-brand" href="../../index.html"
-          ><p class="customItem text-warning">Etalones</p></a
+          ><img class="w-50" src="../../img/logoWhite.png" alt="logo"
+        /></a
         >
         <button
         style="    position: absolute;
-    top: 2rem;
-    right: 2rem;"
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    border: 0;
+    "
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -41,7 +45,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Переключатель навигации">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto gx-1">
@@ -50,32 +54,32 @@
                 class="nav-link customItem dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-current="page"
-                href="../../index.html"
+                href="../../html/vakansii.html"
                 >Вакансии</a
               >
              <ul class="dropdown-menu ">
-                <li class="dropdown-item "><a class="text-black linkForNav" href="./html/./vakansii.html#armaturaL1">Арматура</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#bruschadkaV1">Брусчатка</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#muL1">Мастер-универсал</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#dveriL1">Работа с деревом</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./html/./vakansii.html#demontazD1">Демонтаж</a></li>
+                <li class="dropdown-item "><a class="text-black linkForNav" href="../vakansii.html#armaturaL1">Арматура</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#bruschadkaV1">Брусчатка</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#muL1">Мастер-универсал</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#dveriL1">Работа с деревом</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../vakansii.html#demontazD1">Демонтаж</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./html/informatia.html"
+              <a class="nav-link customItem" href="../../html/informatia.html"
                 >Полезное</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./html/news.html">Новости</a>
+              <a class="nav-link customItem" href="../../html/news.html">Новости</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./html/documents.html"
+              <a class="nav-link customItem" href="../../html/documents.html"
                 >Cоискателям</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./html/contact.html"
+              <a class="nav-link customItem" href="../../html/contact.html"
                 >Контакты</a
               >
             </li>
@@ -114,7 +118,7 @@
  <div class="background-white p-40">
     <div class="row no-margin">
         <div class="col-lg-6">
-            <img src="https://cdn.pixabay.com/photo/2016/03/05/23/02/blur-1239439_640.jpg" alt="В Польше рекордно низкие цены на ж/д билеты!" />
+            <img src="../../img/news/post2.jpg" alt="В Польше рекордно низкие цены на ж/д билеты!" />
             <div class="data">18.09.2023</div>
         </div>
         <div class="col-lg-6">
@@ -235,7 +239,7 @@
                   говорят: осведомленность - лучшее оружие.
                 </p>
                 <a
-                href="../html/informatia.html"
+                href="../../html/informatia.html"
                   type="button"
                   class="btn btn-outline-warning rounded-pill btn-lg"
                   data-mdb-ripple-color="#000000">
@@ -270,7 +274,7 @@
         </div>
       </section>
 
-      <section>
+       <section>
         <h1 class="text-center my-4 customH1">Похожие объявления</h1>
         <div class="container mb-3">
           <div class="d-lg-flex justify-content-between">
@@ -280,7 +284,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/parketL2.jpg"
+                    src="../../img/vacansii/parketL2.jpg"
                     class="img-fluid" />
                   <a href="#!" name="parketL2">
                     <div
@@ -299,8 +303,8 @@
                   <p class="card-text">
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Берлин (Германия)
                   </p>
-                  <p><i class="bi bi-cash  text-cstm-red"></i> 2 300<i class="bi bi-currency-euro"></i> brutto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 4 Мужчины <a href="./vakansii/parketL2.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p><i class="bi bi-cash  text-cstm-red"></i> 2 300<i class="bi bi-currency-euro"></i> netto</p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 4 Мужчины <a href="../vakansii/parketL2.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -312,7 +316,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/dveriL1.jpg"
+                    src="../../img/vacansii/dveriL1.jpg"
                     class="img-fluid" />
                   <a href="#!" name="dveriL1">
                     <div
@@ -331,8 +335,8 @@
                   <p class="card-text">
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Гамбург (Германия)
                   </p>
-                  <p><i class="bi bi-cash  text-cstm-red"></i> 2 500<i class="bi bi-currency-euro"></i> brutto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 2 Мужчины <a href="./vakansii/dveriL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p><i class="bi bi-cash  text-cstm-red"></i> 2 500<i class="bi bi-currency-euro"></i> netto</p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 2 Мужчины <a href="../vakansii/dveriL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -344,7 +348,7 @@
                   class="bg-image  "
                   >
                   <img
-                    src="../img/vacansii/muL1.jpg"
+                    src="../../img/vacansii/muL1.jpg"
                     class="img-fluid" />
                   <a href="#!" name="myL1">
                     <div
@@ -363,8 +367,8 @@
                   <p class="card-text">
                     <i class="bi bi-geo-alt-fill  text-cstm-red"></i> Еупен (Бельгия)
                   </p>
-                  <p><i class="bi bi-cash  text-cstm-red"></i> от 2 500<i class="bi bi-currency-euro"></i> brutto</p>
-                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 3 Мужчины <a href="../html/vakansii/muL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
+                  <p><i class="bi bi-cash  text-cstm-red"></i> от 2 500<i class="bi bi-currency-euro"></i> netto</p>
+                  <p class="mb-0"><i class="bi bi-person-fill  text-cstm-red"></i> 3 Мужчины <a href="../vakansii/muL1.html" class="w-100 d-block text-end m-0"><i class="bi bi-plus-circle  text-cstm-red fs-3 pe-2"></i></a></p>
                   
                   
                 </div>
@@ -398,11 +402,13 @@
             </div>
             <div class="col-lg-6 d-lg-block my-auto">
               <form
-                action=""
+                name="email" method="POST" data-netlify="true"
                 class="d-flex flex-column text-white align-items-start gap-3">
                 <input
+                required
+                name="Почта"
                   type="email"
-                  placeholder="ваша почта@****.com"
+                  placeholder="ваша почта@gmail.com"
                   class="rounded-4 w-50" />
                 <div class="d-flex">
                   <input
@@ -424,8 +430,8 @@
                     checked=""
                     required="" /><label
                     class="px-3"
-                    for="Согласие на получение электронных писем"
-                    >Согласие на получение электронных писем</label
+                    for="Получай регулярные оповещения о новых предложениях работы"
+                    >Получай регулярные оповещения о новых предложениях работы</label
                   >
                 </div>
                 <div class="d-flex">
@@ -437,15 +443,21 @@
                     required="" /><label
                     class="px-3"
                     for="Согласие на получение электронных писем"
-                    >Согласие на получение электронных писем</label
+                    >Получай регулярные уведомления о актуальных новостях</label
                   >
                 </div>
-                <button
-                  type="button"
-                  class="btn btn-outline-warning rounded-pill btn-lg my-4"
-                  data-mdb-ripple-color="#000000">
-                  Присоедениться
-                </button>
+                <input
+      style="
+        background: rgb(97, 28, 21);
+        background: linear-gradient(
+          0deg,
+          rgba(97, 28, 21, 1) 0%,
+          rgba(225, 42, 24, 1) 100%
+        );
+      "
+      class="btn btn-outline-warning rounded-pill btn-lg"
+      type="submit"
+      value="Записаться" />
               </form>
             </div>
           </div>
