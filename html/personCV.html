@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css" />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../img/favicon/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../img/favicon//favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../img/favicon//favicon-16x16.png" />
-    <link rel="manifest" href="../img/favicon//site.webmanifest" />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+      <script
+      defer
+      src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800&amp;subset=latin-ext" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script defer src="../js/cv.js"></script>
+    <script defer src="./js/scrollNavbar.js"></script>
+          <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon//favicon-16x16.png">
+<link rel="manifest" href="../img/favicon//site.webmanifest">
     <title>Etalones S&B</title>
-  </head>
+
+</head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top backgroundGr">
-      <div class="container d-flex justify-content-between">
+     <div class="container d-flex justify-content-between">
         <a class="navbar-brand m-0 w-50" href="/"
-          ><img class="w-50" src="../img/logoWhite.png" alt="logo"
+          ><img  class="w-50" src="../img/logoWhite.png" alt="logo"
         /></a>
-        <button
-          style="color: white; border: 0"
+         <button
+        style="    
+    
+    color: white;
+    border: 0;"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -40,7 +46,7 @@
           <i class="bi bi-list text-white fs-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ">
             <li class="nav-item dropdown">
               <a
                 class="nav-link customItem dropdown-toggle"
@@ -49,40 +55,12 @@
                 href="./vakansii.html"
                 >Вакансии</a
               >
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./vakansii.html#armaturaL1"
-                    >Арматура</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./vakansii.html#bruschadkaV1"
-                    >Брусчатка</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a class="text-black linkForNav" href="./vakansii.html#muL1"
-                    >Мастер-универсал</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./vakansii.html#dveriL1"
-                    >Работа с деревом</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./vakansii.html#demontazD1"
-                    >Демонтаж</a
-                  >
-                </li>
+              <ul class="dropdown-menu ">
+                <li class="dropdown-item "><a class="text-black linkForNav" href="./vakansii.html#armaturaL1">Арматура</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./vakansii.html#bruschadkaV1">Брусчатка</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./vakansii.html#muL1">Мастер-универсал</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./vakansii.html#dveriL1">Работа с деревом</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./vakansii.html#demontazD1">Демонтаж</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -93,9 +71,25 @@
             <li class="nav-item">
               <a class="nav-link customItem" href="./news.html">Новости</a>
             </li>
-
+             <li class="nav-item dropdown">
+              <a
+                class="nav-link customItem dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+                href="./vakansii.html"
+                >Соискателям</a
+              >
+              <ul class="dropdown-menu ">
+                <li class="dropdown-item "><a class="text-black linkForNav" href="./predlojenia-dlia-4lits.html">Предложения для частных лиц</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./predlojenia-dlia-firm.html">Предложения для юредических лиц</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="./personCV.html">Заполнить CV</a></li>
+                
+              </ul>
+            </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./contact.html">Контакты</a>
+              <a class="nav-link customItem" href="./contact.html"
+                >Контакты</a
+              >
             </li>
           </ul>
         </div>
@@ -103,6 +97,8 @@
     </nav>
 
     <main>
+        <p class="h1 text-muted text-center">Сервис времено недоступен, <br>
+             пройдите живое анкетирование с нашим <a href="https://t.me/Smocvin">менеджером</a></p>
       <div class="container">
         <div class="background-white p-40" style="user-select: none">
           <form
@@ -111,7 +107,7 @@
             id="formCv"
             autocomplete="on">
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-12">
                 <div class="row">
                   <div class="col-md-6">
                     <label class="form-label mt-2">Имя</label>
@@ -133,7 +129,7 @@
                       class="form-control"
                       required="" />
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-12">
                     <label class="form-label mt-2"
                       >Должность
                       <small>(Можно выбрать несколько позиций)</small></label
@@ -146,62 +142,50 @@
                       required=""
                       data-select2-id="select2-data-stanowisko"
                       tabindex="-1"
-                      aria-hidden="true">
+                      aria-hidden="true"
+                      style="width: 100%;">
                       <option value="1"></option>
                       <optgroup label="Водитель">
-                        <option value="157">Водитель кат В</option>
-                        <option value="155">Водитель кат С</option>
-                        <option value="156">Водитель спецтехники</option>
+                        <option value="1">Водитель кат В</option>
+                        <option value="2">Водитель кат С</option>
+                        <option value="3">Водитель спецтехники</option>
                       </optgroup>
-                      <optgroup label="Гастрономия">
-                        <option value="66">
-                          Кухонный помощник / посудомойщик
-                        </option>
-                        <option value="69">Другое</option>
-                        <option value="63">Кондитер, пекарь</option>
-                        <option value="64">Официант, бармен, бариста</option>
-                        <option value="65">Повар</option>
+                      <optgroup label="Работа на улице">
+                        <option value="151">Укладка брусчатки</option>
+                        <option value="5">Плотник</option>
+                        <option value="6">Вязка арматуры</option>
+                        <option value="7">Заливка бетона</option>
+                        <option value="8">Фасады</option>
                       </optgroup>
-                      <optgroup label="Гостиничный бизнес">
-                        <option value="12">Персонал отеля</option>
-                      </optgroup>
-                      <optgroup label="Механика и лакировка">
-                        <option value="120">Лакировщик, жестянщик</option>
-                        <option value="119">Механик, электромеханик</option>
+                      <optgroup label="Внутриняя отделка">
+                        <option value="9">Штукатурка</option>
+                        <option value="10">Малярка</option>
+                        <option value="11">Гипсокартон</option>
+                        <option value="12">Плитка</option>
+                        <option value="13">Паркет</option>
+                        <option value="14">Монтаж окон и дверей</option>
                       </optgroup>
                       <optgroup label="Производство">
-                        <option value="108">Оператор машин с ЧПУ</option>
+                        <option value="148">Столяр</option>
+                        <option value="120">Сварщик</option>
+                        <option value="146">Шлифовщик по металлу</option>
+                        <option value="149">Маляр порошковой покраски</option>
+                        <option value="119">Фрезировшик</option>
+                        <option value="120">Оператор машин с ЧПУ</option>
                         <option value="153">
                           Работа на деревоперерабатывающем предприятии
                         </option>
                         <option value="106">Работник производства</option>
                       </optgroup>
-                      <optgroup label="Работник магазина">
-                        <option value="143">Выкладка товара</option>
-                        <option value="142">Касир</option>
-                        <option value="154">Кассир-продавец на АЗС</option>
-                      </optgroup>
+                      
+                      
                       <optgroup label="Рабочие специальности">
-                        <option value="149">Маляр порошковой покраски</option>
-                        <option value="150">Сантехник</option>
-                        <option value="145">Сварщик</option>
-                        <option value="148">Столяр</option>
-                        <option value="147">Токарь</option>
-                        <option value="151">Укладка брусчатки</option>
-                        <option value="146">Шлифовщик по металлу</option>
+                        <option value="150">Сантехник</option>                
                         <option value="152">Электрик</option>
                       </optgroup>
-                      <option value="110">Сезонная работа</option>
-                      <optgroup label="Складские работы">
-                        <option value="140">Администратор</option>
-                        <option value="141">Оператор погрузчика UDT</option>
-                        <option value="139">Работник склада</option>
-                      </optgroup>
-                      <option value="57">Строительство</option>
-                      <option value="19">Уборка</option>
-                      <option value="113">
-                        Франшиза / Собственная компания
-                      </option></select
+                      <option value="888">Другое</option>
+                      
+                   </select
                     ><span
                       class="select2 select2-container select2-container--default"
                       dir="ltr"
@@ -256,7 +240,7 @@
                       minlength="2"
                       placeholder="Улица, номер дома"
                       class="form-control"
-                      required="" />
+                       />
                   </div>
                   <div class="col-md-6">
                     <input
@@ -265,7 +249,7 @@
                       minlength="2"
                       placeholder="Город"
                       class="form-control mt-2"
-                      required="" />
+                       />
                   </div>
                   <div class="col-md-6">
                     <input
@@ -292,7 +276,58 @@
                       <option value="136">Узбекистан</option>
                     </select>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-12">
+                    <label class="form-label mt-2"
+                      >Выберите документы в наличии
+                      <small>(Можно выбрать несколько позиций)</small></label
+                    >
+                    <select
+                      name="documents[]"
+                      class="form-control profesion-multiple"
+                      id="documents"
+                      multiple="multiple"
+                      required=""
+                      data-select2-id="select2-data-documents"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="width: 100%;">
+                      <option value="1"></option>
+                      <optgroup label="Паспорт">
+                        <option value="1">Паспорт Евросоюза</option>
+                        <option value="2">Биометрический загран паспорт</option>
+                        <option value="3">Внутриний паспорт</option>
+                      </optgroup>
+                      <optgroup label="Разрешающие документы">
+                        <option value="151">Польская карта побыту(синяя)</option>
+                        <option value="5">Польская карта побыту(красная)</option>
+                        <option value="6">ВНЖ Германии</option>
+                        <option value="7">Параграф 24</option>
+                        
+                      </optgroup>
+                      <optgroup label="Виза">
+                        <option value="9">Приглашение от фирмы</option>
+                        <option value="10">Подал документы на Визу</option>
+                        <option value="11">Виза готова</option>
+                      </optgroup>
+                      <optgroup label="Дополнительно">
+                        <option value="148">Pesel</option>
+                        <option value="120">Банковская карта с евросчётом</option>
+                        
+                      </optgroup>
+                      
+                      
+                      
+                      
+                   </select
+                    ><span
+                      class="select2 select2-container select2-container--default"
+                      dir="ltr1"
+                      data-select2-id="select2-data-1-txsi1"
+                      ><span class="dropdown-wrapper" aria-hidden="true"></span
+                    ></span>
+                  </div>
+
+                  <div class="col-md-12 ">
                     <label class="form-label mt-2">Описание резюме</label>
                     <textarea
                       type="text"
@@ -302,10 +337,10 @@
                       placeholder="Описание резюме"
                       class="form-control"></textarea>
                   </div>
-                  <div class="col-md-12 dynamic_form">
+                  <div class="col-md-12 dynamic_form my-y">
                     <h4 class="text-primary text-left mt-5 mb-0">Опыт</h4>
                     <div class="heading-text-box mt-3 mb-3"></div>
-                    <div class="table-responsive">
+                    <div class="table-responsive input_fields_wrap1">
                       <table class="table table-hover table-sortable tab_logic">
                         <thead>
                           <tr>
@@ -319,74 +354,8 @@
                           </tr>
                         </thead>
                         <tbody data-min-count="1" class="ui-sortable">
-                          <tr
-                            id="addr0"
-                            data-id="0"
-                            class="hidden"
-                            style="display: none">
-                            <td
-                              data-name="doswiadczenie_data_od"
-                              data-name2="doswiadczenie_data_do">
-                              <input
-                                type="date"
-                                max="2023-10-11"
-                                style="
-                                  max-width: 120px;
-                                  min-width: 116px;
-                                  padding-left: 8px;
-                                  padding-right: 6px;
-                                "
-                                min="1901-01-01"
-                                name="false_doswiadczenie_data_od[]"
-                                maxlength="10"
-                                placeholder="Дата от (РРРР-ММ-ДД)"
-                                class="form-control" />
-                              <input
-                                type="date"
-                                max="2023-10-11"
-                                style="
-                                  max-width: 120px;
-                                  min-width: 116px;
-                                  padding-left: 8px;
-                                  padding-right: 6px;
-                                "
-                                min="1901-01-01"
-                                name="false_doswiadczenie_data_do[]"
-                                maxlength="10"
-                                placeholder="Дата до (РРРР-ММ-ДД)"
-                                class="mt-2 form-control" />
-                            </td>
-                            <td
-                              data-name="doswiadczenie_nazwa"
-                              data-name2="doswiadczenie_opis">
-                              <input
-                                type="text"
-                                name="false_doswiadczenie_nazwa[]"
-                                placeholder="Опыт"
-                                class="form-control" />
-                              <textarea
-                                type="text"
-                                name="false_doswiadczenie_opis[]"
-                                rows="3"
-                                placeholder="Описание трудового стажа"
-                                class="mt-2 form-control"></textarea>
-                            </td>
-                            <td data-name="del" data-name2="move">
-                              <button
-                                type="button"
-                                name="del0"
-                                class="btn btn-sm btn-danger row-remove">
-                                <span class="fa fa-times text-white"></span>
-                              </button>
-                              <button
-                                type="button"
-                                name="move0"
-                                class="btn btn-sm btn-light btn-move">
-                                <span class="fa fa-arrows-alt text-dark"></span>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr id="addr1" data-id="1">
+                  
+                          <tr >
                             <td
                               data-name="doswiadczenie_data_od"
                               data-name2="doswiadczenie_data_do">
@@ -432,7 +401,7 @@
                                 placeholder="Описание трудового стажа"
                                 class="mt-2 form-control"></textarea>
                             </td>
-                            <td data-name="del" data-name2="move">
+                            <td data-name="del">
                               <button
                                 type="button"
                                 name="del1"
@@ -440,21 +409,15 @@
                                 value="">
                                 <span
                                   class="fa fa-times text-white"></span></button
-                              ><button
-                                type="button"
-                                name="del1"
-                                class="btn btn-sm btn-light btn-move"
-                                value="">
-                                <span class="fa fa-arrows-alt text-dark"></span>
-                              </button>
+                              >
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                     <a
-                      class="add_row btn btn-primary btn-sm text-white float-right"
-                      >Добавить опыт</a
+                      class="add_field_button1 btn btn-primary btn-sm text-white float-right"
+                      >Добавить</a
                     >
                   </div>
                   <div class="col-md-12 dynamic_form">
@@ -462,7 +425,7 @@
                       Образование
                     </h4>
                     <div class="heading-text-box mt-3 mb-3"></div>
-                    <div class="table-responsive">
+                    <div class="table-responsive input_fields_wrap3">
                       <table class="table table-hover table-sortable tab_logic">
                         <thead>
                           <tr>
@@ -610,7 +573,7 @@
                       </table>
                     </div>
                     <a
-                      class="add_row btn btn-primary btn-sm text-white float-right"
+                      class="add_field_button3 btn btn-primary btn-sm text-white float-right"
                       >Добавить образование</a
                     >
                   </div>
@@ -619,7 +582,7 @@
                       Пройденные курсы и тренинги
                     </h4>
                     <div class="heading-text-box mt-3 mb-3"></div>
-                    <div class="table-responsive">
+                    <div class="table-responsive input_fields_wrap4">
                       <table class="table table-hover table-sortable tab_logic">
                         <thead>
                           <tr>
@@ -636,7 +599,7 @@
                         </thead>
                         <tbody data-min-count="1" class="ui-sortable">
                           <tr
-                            id="addr0"
+                            
                             data-id="0"
                             class="hidden"
                             style="display: none">
@@ -765,45 +728,13 @@
                       </table>
                     </div>
                     <a
-                      class="add_row btn btn-primary btn-sm text-white float-right"
+                      class="add_field_button4 btn btn-primary btn-sm text-white float-right"
                       >Добавить курс или обучение</a
                     >
                   </div>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="row">
-                  <div class="col-md-12">
-                    <label for="images" style="cursor: pointer"
-                      ><img
-                        title="Нажмите, чтобы сменить фото"
-                        style="
-                          padding: 0;
-                          width: 100%;
-                          max-width: 360px;
-                          border: 3px solid #fff;
-                          box-shadow: 0 0 4px 0 #888;
-                        "
-                        src="../img/images/nophoto.jpg"
-                        data-org-src="/vendor/img/nophoto.jpg"
-                        id="upload-image"
-                    /></label>
-                    <div class="mb-5 mt-3">
-                      <label class="form-label" for="images"
-                        >Фото к резюме</label
-                      >
-                      <input
-                        data-max-size="5242880"
-                        max-size="5242880"
-                        class="form-control"
-                        accept="image/png, image/jpeg"
-                        type="file"
-                        data-nazwa-pola="Фото к резюме"
-                        id="images"
-                        name="zdjecie" />
-                    </div>
-                  </div>
-                  <div class="col-md-12 dynamic_form lineone">
+                  <div class="row">
+                  
+                  <div class="col-md-12 dynamic_form lineone mb-3">
                     <h4 class="text-primary text-left mb-0">
                       Владение языками
                     </h4>
@@ -814,6 +745,7 @@
                           <tr>
                             <th class="text-center text-normal">Язык</th>
                             <th class="text-center text-normal">Уровень</th>
+                            <th></th>
                           </tr>
                         </thead>
                         <tbody data-min-count="1" class="ui-sortable">
@@ -843,7 +775,7 @@
                                 </option>
                               </select>
                             </td>
-                            <td data-name="del">
+                            <td data-name="del" class="d-none">
                               <button
                                 type="button"
                                 name="del1"
@@ -858,17 +790,17 @@
                     </div>
                     <a
                       class="add_field_button btn btn-primary btn-sm text-white float-right"
-                      >Добавь</a
+                      >Добавить</a
                     >
                   </div>
-                  <div class="col-md-12 dynamic_form lineone">
+                  <div class="col-md-12 dynamic_form lineone mb-3">
                     <h4 class="text-primary text-left mb-0">Навыки</h4>
                     <div class="heading-text-box mt-3 mb-3"></div>
-                    <div class="table-responsive">
+                    <div class="table-responsive input_fields_wrap5">
                       <table class="table table-hover table-sortable tab_logic">
                         <thead>
                           <tr>
-                            <th class="text-center text-normal">Навык</th>
+                            <th class="text-normal">Навык</th>
                             <th></th>
                           </tr>
                         </thead>
@@ -929,18 +861,18 @@
                       </table>
                     </div>
                     <a
-                      class="add_row btn btn-primary btn-sm text-white float-right"
-                      >Добавь</a
+                      class="add_field_button5 btn btn-primary btn-sm text-white float-right"
+                      >Добавить</a
                     >
                   </div>
                   <div class="col-md-12 dynamic_form lineone">
                     <h4 class="text-primary text-left mb-0">Интересы</h4>
                     <div class="heading-text-box mt-3 mb-3"></div>
-                    <div class="table-responsive">
+                    <div class="table-responsive input_fields_wrap6">
                       <table class="table table-hover table-sortable tab_logic">
                         <thead>
                           <tr>
-                            <th class="text-center text-normal">Интерес</th>
+                            <th class=" text-normal">Интерес</th>
                             <th></th>
                           </tr>
                         </thead>
@@ -980,7 +912,7 @@
                                 placeholder="Название интереса"
                                 class="form-control" />
                             </td>
-                            <td data-name="del" data-name2="move">
+                            <td data-name="del" data-name2="move" class="d-none">
                               <button
                                 type="button"
                                 name="del1"
@@ -1001,104 +933,16 @@
                       </table>
                     </div>
                     <a
-                      class="add_row btn btn-primary btn-sm text-white float-right"
-                      >Добавь</a
+                      class="add_field_button6 btn btn-primary btn-sm text-white float-right"
+                      >Добавить</a
                     >
                   </div>
-                </div>
-              </div>
-              <div class="col-md-12 text-left mt-3">
-                <h4 class="text-primary text-left mb-0">
-                  Дополнительные файлы
-                </h4>
-                <div class="heading-text-box mt-3 mb-4"></div>
+                  </div>
 
-                <div class="form-group">
-                  <label class="col-sm-12 row control-label">
-                    Приложения
-                  </label>
-                  <span
-                    class="btn btn-default btn-file"
-                    style="
-                      width: 100%;
-                      margin-left: -12px;
-                      margin-right: -12px;
-                    ">
-                    <input
-                      data-max-size="5242880"
-                      max-size="5242880"
-                      data-nazwa-pola="Приложения"
-                      name="zalaczniki1"
-                      accept="image/png, image/jpeg, application/pdf"
-                      class="form-control"
-                      type="file" />
-                  </span>
-                  <span
-                    class="btn btn-default btn-file"
-                    style="
-                      width: 100%;
-                      margin-left: -12px;
-                      margin-right: -12px;
-                    ">
-                    <input
-                      data-max-size="5242880"
-                      max-size="5242880"
-                      data-nazwa-pola="Приложения"
-                      name="zalaczniki2"
-                      accept="image/png, image/jpeg, application/pdf"
-                      class="form-control"
-                      type="file" />
-                  </span>
-                  <span
-                    class="btn btn-default btn-file"
-                    style="
-                      width: 100%;
-                      margin-left: -12px;
-                      margin-right: -12px;
-                    ">
-                    <input
-                      data-max-size="5242880"
-                      max-size="5242880"
-                      data-nazwa-pola="Приложения"
-                      name="zalaczniki3"
-                      accept="image/png, image/jpeg, application/pdf"
-                      class="form-control"
-                      type="file" />
-                  </span>
-                  <span
-                    class="btn btn-default btn-file"
-                    style="
-                      width: 100%;
-                      margin-left: -12px;
-                      margin-right: -12px;
-                    ">
-                    <input
-                      data-max-size="5242880"
-                      max-size="5242880"
-                      data-nazwa-pola="Приложения"
-                      name="zalaczniki4"
-                      accept="image/png, image/jpeg, application/pdf"
-                      class="form-control"
-                      type="file" />
-                  </span>
-                  <span
-                    class="btn btn-default btn-file"
-                    style="
-                      width: 100%;
-                      margin-left: -12px;
-                      margin-right: -12px;
-                    ">
-                    <input
-                      data-max-size="5242880"
-                      max-size="5242880"
-                      data-nazwa-pola="Приложения"
-                      name="zalaczniki5"
-                      accept="image/png, image/jpeg, application/pdf"
-                      class="form-control"
-                      type="file" />
-                  </span>
                 </div>
               </div>
+              
+              
 
               <div class="col-md-12 text-left mt-3">
                 <p style="font-size: 17px">

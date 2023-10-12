@@ -1,0 +1,10 @@
+ .pForm{
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ .pForm p{
+    font-weight: 600;
+    color: black;
+ }
+ 
