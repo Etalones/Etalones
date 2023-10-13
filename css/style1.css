@@ -1,6 +1,8 @@
 :root {
   --text-color: #c0392b;
   --text-shadow:#ffffff49;
+  --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);
+  --linear-gradient-grey2:linear-gradient(0deg,rgb(254, 0, 0)) 0%, rgb(255, 255, 255) 100%);
 }
 body {
 font-family: Comfortaa,sans-serif!important;
@@ -408,3 +410,20 @@ font-family: Comfortaa,sans-serif!important;
 
 
 /* ------------Informatsiya------------ */
+
+.hoverItems{
+  height: 3.5rem;
+  color: #b50000;
+background: rgb(172,172,172);
+background: var(--linear-gradient-grey);
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 15px 4px rgba(0, 0, 0, 0.15) !important;
+border: 1px solid var(--linear-gradient-grey)!important;
+transition: all 0.2s!important;
+}
+.hoverItems:hover{
+ color: #d10000;
+ font-weight: 600;
+ text-shadow: 0px 0px 7px #d100006c,0px 0px 7px #ffffff;
+transform: scale(1.1);
+transition: all 0.2s!important;
+}
