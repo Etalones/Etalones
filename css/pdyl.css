@@ -359,9 +359,7 @@ p,
 li {
   font-size: 1.25rem;
 }
-li + li {
-  margin-top: 1.25rem;
-}
+
 p + p {
   margin-top: 1rem;
 }
@@ -430,29 +428,14 @@ input:focus {
   background: var(--color2);
 }
 
-.slide-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 17.25rem;
-  min-height: 100vh;
-  background: #9fafbc;
+
+.slide-1  {
   
-}
-.slide-1 .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: url(../img/images/slide-3-img-3.jpeg);
-  background-position: fixed;
-  background-size: 100% auto;
+ min-height: 100vh;
+  background-position: bottom;
+  background-size: cover;
   background-repeat: no-repeat;
-  content: "";
-  display: block;
-  z-index: -1;
 }
 .slide-1 > div {
   display: flex;
@@ -1076,4 +1059,58 @@ input:focus {
 
 .instagram:hover svg {
   fill: #c13584;
+}
+
+/* add menu */
+.linkForNav {
+  text-decoration: none !important;
+}
+.scrolled {opacity: 0.5;
+   background: rgb(97, 28, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(97, 28, 21, 0.7) 0%,
+    rgba(225, 42, 24, 0.7) 100%
+  );
+  transition: background-color 0.5s ease-in-out;}
+.scrolled:hover{
+  opacity: 1;
+  background-color: #b50000;
+}
+  .customClr{
+  color: var(--text-color);
+}
+  .customItem {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.customItem1 {
+  color: #000000;
+  text-shadow: 1px 1px 2px  var(--text-shadow);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 34px;
+  letter-spacing: 2px;
+}
+.customItem1:hover{
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px  black;
+}
+.backgroundGr {
+  background: rgb(97, 28, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(97, 28, 21, 1) 0%,
+    rgba(225, 42, 24, 1) 100%
+  );
+  transition: background-color 0.5s ease-in-out;
+}
+
+.backgroundE12a18 {
+  background: #e12a18;
+}
+.text-cstm-red{
+  color: #e12a18;
 }
