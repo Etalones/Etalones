@@ -59,16 +59,32 @@ font-family: Comfortaa,sans-serif!important;
 .backgroundE12a18 {
   background: #e12a18;
 }
-.text-cstm-red{
+.cstmSubHeader {
+  
   color: #AF0707;
+  text-shadow: 0px 0px 1px #ffffff;
+  filter: invert(0%) sepia(0%) saturate(500%) hue-rotate(354deg) brightness(100%) contrast(100%);
+  transition: text-shadow 0.3s ease-in-out, filter 0.3s ease-in-out,transform scale(1.2);
+  animation: colorChange 1s alternate infinite;
 }
-.cstmSubHeader{
-  color: #AF0707;
-   filter: invert(0%) sepia(0%) saturate(500%) hue-rotate(354deg) brightness(100%) contrast(100%);
-  transition: filter 0.3s ease-in-out;
+
+@keyframes colorChange {
+  0% {
+    color: #AF0707;
+    text-shadow: 0px 0px 1px #ffffff;
+  }
+  100% {
+    color: #ffffff; /* Изменение цвета при анимации */
+    text-shadow: 0px 0px 3px #AF0707; /* Изменение размера тени при анимации */
+  }
 }
-.cstmSubHeader:hover{
-   filter: invert(100%);
+
+.cstmSubHeader:hover {
+  text-shadow: 0px 0px 3px #ffffff;
+  filter: invert(100%);
+  animation: none;
+  transition: 0.5s;
+  transform: scale(1.2); /* Отключение анимации при наведении */
 }
 .customBGAll::before {
   content: "";
@@ -416,6 +432,50 @@ font-family: Comfortaa,sans-serif!important;
 .instagram:hover svg {
   fill: #c13584;
 }
+/* social for Managers */
+.telegramAnim,
+.whatsAppAnim {
+  color: #AF0707;
+  transition: 0.5s;
+  transform-origin: center;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+}
+
+.telegramAnim {
+  animation: colorChangeT 2s alternate infinite;
+  animation-delay: 0s;
+}
+
+.whatsAppAnim {
+  animation: colorChangeW 2s alternate infinite;
+  animation-delay: 2s;
+}
+
+@keyframes colorChangeT {
+  0% {
+    color: #2F89CE;
+  }
+  100% {
+    color: #005393;
+  }
+}
+
+@keyframes colorChangeW {
+  0% {
+    color: #48C95F;
+  }
+  100% {
+    color: #045313;
+  }
+}
+
+.telegramAnim:hover,
+.whatsAppAnim:hover {
+  animation: none;
+  
+}
+
 
 
 /* ------------Informatsiya------------ */
