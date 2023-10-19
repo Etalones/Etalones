@@ -1,5 +1,5 @@
 :root {
-  --text-color: #c0392b;
+  --text-color: #AF0707;
   --text-shadow:#ffffff49;
   --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);
   --linear-gradient-grey2:linear-gradient(0deg,rgb(254, 0, 0)) 0%, rgb(255, 255, 255) 100%);
@@ -60,7 +60,15 @@ font-family: Comfortaa,sans-serif!important;
   background: #e12a18;
 }
 .text-cstm-red{
-  color: #e12a18;
+  color: #AF0707;
+}
+.cstmSubHeader{
+  color: #AF0707;
+   filter: invert(0%) sepia(0%) saturate(500%) hue-rotate(354deg) brightness(100%) contrast(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.cstmSubHeader:hover{
+   filter: invert(100%);
 }
 .customBGAll::before {
   content: "";
