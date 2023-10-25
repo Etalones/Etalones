@@ -1,14 +1,15 @@
 :root {
   --text-color: #AF0707;
   --text-shadow:#ffffff49;
-  --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);
-  --linear-gradient-grey2:linear-gradient(0deg,rgb(254, 0, 0)) 0%, rgb(255, 255, 255) 100%);
-}
+  --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);}
+ 
 body {
 font-family: Comfortaa,sans-serif!important;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  color:var(--text-color) ;
 }
+
 body a{
   color:var(--text-color) ;
 }
@@ -70,10 +71,16 @@ body a{
     }
 }
 
+
 .new {
     animation: flash 1s infinite;
 }
-
+.new1 {
+    animation: flash 1.2s infinite;
+}
+.new1:hover{
+    animation: none;
+}
 
 
 .cstmSubHeader {
@@ -187,6 +194,7 @@ body a{
   font-family: Comfortaa,sans-serif!important;
 }
 .customH32 {
+  width: max-content;
   color: #e12a18;
   font-size: 2rem;
   font-weight: 600;
@@ -218,6 +226,7 @@ body a{
   user-select: none;
   z-index: 10;
   overflow: hidden;
+  color: var(--text-color)!important;
 }
 
 .card .backgroundEffect {
@@ -345,6 +354,18 @@ body a{
 
 .card .content .foot .icon {
   font-size: 12px;
+}
+
+.cstmSubNav{
+  margin: 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.cstmSubNav:hover{
+  transition: all 0.3s;
+  cursor: pointer;
+  transform: scale(1.2);
+  text-decoration: none;
 }
 
 /* 17:49 */
@@ -514,3 +535,6 @@ transform: scale(1.1);
 transition: all 0.2s!important;
 }
 /* dddddddddddddddddddddddddddddddd */
+.testriple{
+
+}
