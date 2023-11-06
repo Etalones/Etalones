@@ -71,7 +71,7 @@ body a{
     }
 }
 
-
+.vnutr{}
 .new {
     animation: flash 1s infinite;
 }
@@ -81,6 +81,16 @@ body a{
 .new1:hover{
     animation: none;
 }
+
+
+.click {
+  position: absolute; /* Позволяет элементу занимать всю площадь родителя */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 
 
 .cstmSubHeader {
@@ -217,8 +227,9 @@ body a{
 /* test */
 
 .card {
+  max-width: 400px;
   width: 100%;
-  height: max-content;
+  height: 520px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #fff;
   transition: all 0.5s ease;
@@ -318,6 +329,9 @@ body a{
 
 
 .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0 20px;
 }
 
@@ -535,6 +549,3 @@ transform: scale(1.1);
 transition: all 0.2s!important;
 }
 /* dddddddddddddddddddddddddddddddd */
-.testriple{
-
-}
