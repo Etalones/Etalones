@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-5.3.1-dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <script
+  
+      <script
       defer
-      src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/style1.css" />
-
+      src="../../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style1.css" />
+    <link rel="stylesheet" href="../../css/theme-elements.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800&amp;subset=latin-ext"
       rel="stylesheet"
@@ -20,22 +23,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext"
       rel="stylesheet" />
 
-    <script defer src="./js/scrollNavbar.js"></script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../img/favicon/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../img/favicon//favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../img/favicon//favicon-16x16.png" />
-    <link rel="manifest" href="../img/favicon//site.webmanifest" />
+    <script defer src="../../js/scrollNavbar.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -55,12 +43,12 @@
   </head>
   <body>
     <nav
-     class="navbar navbar-expand-lg sticky-top backgroundGr">
-      <div class="container d-flex justify-content-between">
-        <a class="navbar-brand m-0 w-50" href="/"
-          ><img  class="w-25" src="./img/logoWhite.png" alt="logo"
+      class="navbar navbar-expand-lg position-absolute w-100 backgroundGr fixed-top" >
+      <div class="container  d-flex justify-content-between">
+        <a class="navbar-brandm-0 w-50" href="/"
+          ><img class="w-25" src="../../img/logoWhite.png" alt="logo"
         /></a>
-        <button
+       <button
         style="    
     
     color: white;
@@ -81,72 +69,60 @@
                 class="nav-link customItem dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-current="page"
-                href="./pages/vakansii.html"
+                href="../vakansii.html"
                 >Вакансии</a
               >
               <ul class="dropdown-menu">
                 <li class="dropdown-item">
                   <a
                     class="text-black linkForNav"
-                    href="./pages/./vakansii.html#armaturaL1"
+                    href="../vakansii.html#armaturaL1"
                     >Арматура</a
                   >
                 </li>
                 <li class="dropdown-item">
                   <a
                     class="text-black linkForNav"
-                    href="./pages/./vakansii.html#bruschadkaV1"
+                    href="../../pages/vakansii.html#bruschadkaV1"
                     >Брусчатка</a
                   >
                 </li>
                 <li class="dropdown-item">
                   <a
                     class="text-black linkForNav"
-                    href="./pages/./vakansii.html#muL1"
+                    href="../../pages/vakansii.html#muL1"
                     >Мастер-универсал</a
                   >
                 </li>
                 <li class="dropdown-item">
                   <a
                     class="text-black linkForNav"
-                    href="./pages/./vakansii.html#dveriL1"
+                    href="../../pages/vakansii.html#dveriL1"
                     >Работа с деревом</a
                   >
                 </li>
                 <li class="dropdown-item">
                   <a
                     class="text-black linkForNav"
-                    href="./pages/./vakansii.html#demontazD1"
+                    href="../../pages/vakansii.html#demontazD1"
                     >Демонтаж</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./pages/informatia.html"
+              <a class="nav-link customItem" href="../../pages/informatia.html"
                 >Полезное</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="./pages/news.html">Новости</a>
-            </li>
-<li class="nav-item dropdown">
-              <a
-                class="nav-link customItem dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-current="page"
-                href="./vakansii.html"
-                >Соискателям</a
+              <a class="nav-link customItem" href="../../pages/news.html"
+                >Новости</a
               >
-              <ul class="dropdown-menu ">
-                <li class="dropdown-item "><a class="text-black linkForNav" href="./pages/predlojenia-dlia-4lits.html">Предложения для частных лиц</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./pages/predlojenia-dlia-firm.html">Предложения для юредических лиц</a></li>
-                <li class="dropdown-item"><a class="text-black linkForNav" href="./pages/personCV.html">Заполнить CV</a></li>
-                
-              </ul>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link customItem" href="./pages/contact.html"
+              <a class="nav-link customItem" href="../../pages/contact.html"
                 >Контакты</a
               >
             </li>
@@ -154,497 +130,213 @@
         </div>
       </div>
     </nav>
-    <main>
-      <div style="position: relative">
+
+    <main><div class="sticky-top" style="z-index: 1; background-color: #000000dc">
+          <div class="container d-flex justify-content-between w-100 ">
+            <a class="p-3 cstmSubHeader text-decoration-none fw-bold" href="/"><img src="../../img/svg/logoRed.svg" alt="logo" style="width: 35px;">&nbsp;Etalones S&B</a
+            ><a class="p-3 cstmSubHeader d-flex align-items-center" href="../vakansii.html#svarkaD1"><i class="bi bi-arrow-bar-left fs-4"></i>К вакансиям</a>
+          </div>
+        </div>
+      <div class="container-fluid m-0 p-0">
         
-        <div
-          class="customBG position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-          <div class="customBGAll">
-            <div class="col-md-6 p-lg-5 mx-auto my-5">
-              <h1 class="display-5 fw-semibold">Ищете работу в Европе?</h1>
-              <h3 class="mb-3 fw-semibold">У нас 40 вакансий</h3>
-              <a
-          href="./pages/vakansii.html"
-          type="button"
-          class="btn btn-outline-warning rounded-pill "
-          style="
+        <div class="justify-content-center d-flex" style="z-index: -1">
+          <video 
+            width="100%"
             
-            background: rgb(97, 28, 21);
-            background: linear-gradient(
-              0deg,
-              rgba(97, 28, 21, 1) 0%,
-              rgba(225, 42, 24, 1) 100%
-            );
-            z-index: 11;
-          "
-          data-mdb-ripple-color="#000000">
-          <i class="bi bi-search"></i> см. Предложения
-        </a>
+            loop="loop"
+            autoplay
+            playsinline
+            muted
+            src="../../img/vacansii/svarkaD1/svarkaD1.mp4"></video>
+        </div>
+        <div class="testriple"></div>
+      </div>
+
+      <section class="background-grey praca-oferta p-b-40">
+        <div class="container">
+          <div class="bg-white p-4">
+            <div class="row no-margin">
+              <div class="col-md-8 no-padding">
+                <h2 class="m-b-15">Сварщики</h2>
+                <div class="kategoria">
+                  <a href="/">Etalones S&B</a> /
+                  <a href="../vakansii.html">Вакансии</a> / Работа с металлом
+                </div>
+                <div class="miasto p-t-30 p-b-20">
+                  <i class="bi bi-geo-alt-fill"></i> Бавария, Германия
+                </div>
+              </div>
+              <div class="col-md-4 no-padding">
+                <div class="col-sm-6 col-md-9 col-lg-8 no-padding">
+                  <div class="effect social-links mb-3">
+                    <img src="../../img/vacansii/svarkaD1.jpg" alt="Сварка" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row smainfo no-margin m-t-50">
+              <div class="col-md-4">
+                <div class="pddpo">
+                  <i class="bi bi-person-fill"></i>Вакансии
+                </div>
+                <div class="miejsc">
+                  4<br /><span style="font-size: 18px">мужчины</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="pddpo">
+                  <i class="bi bi-cash"></i>Вознаграждение.
+                </div>
+                <p>Ставка в час 14-16&nbsp;€ нетто.</p>
+                <p>В месяц&nbsp;2500&nbsp;€ нетто.&nbsp;</p>
+              </div>
+              <div class="col-md-4">
+                <div class="pddpo">
+                  <i class="bi bi-house-fill"></i>Проживание
+                </div>
+                <p>Бесплатно</p>
+              </div>
+            </div>
+            <div class="row opisoferta no-margin m-b-20">
+              <div class="col-md-12">
+                <h2 class="m-b-15">Информация про работу</h2>
+                <strong><p>Сварщики на полуавтомат и сварщики аргон-алюминий</p></strong>
+                <ul>
+                  <li>Сварщики на полуавтомат - 14-15€/час брутто.</li>
+                  <li>Алюминий, аргон - 15-16€/час брутто на старт</li>
+                </ul>
+<p><strong>Необходимые документы:</strong></p>
+<li>Паспорт ЕС</li>
+<li class="mb-2">Параграф 24</li>
+
+<p><strong>Официальное трудоустройство на немецкую компанию</strong></p>
+<li>Полный соц.пакет</li>
+<li>Страховка </li>
+<li>Оплачиваемый отпуск <span class="text-muted">(24 дня в году)</span></li>
+<li class="mb-2">Доплата +25% к ставке за переработки</li>
+
+<p><strong>Быт и транспорт</strong></p>
+<li>Жильё предоставляется бесплатно</li>
+<li>По 1 человеку в комнате в хостеле</li>
+<li>Транспорт и топливо бесплатно</li>
+<li class="mb-2">Работа на большом</li>
+
+<p><strong>График работы:</strong></p>
+<li>5/2 по 8 часов</li>
+<li class="mb-2">Можно брать доп.часы</li>
+                <p><strong>Вид договора:</strong></p>
+                <ul>
+                  <li>гражданско-правовой – Umowa zlecenie.</li>
+                </ul>
+                <!-- Здесь могут быть дополнительные поля, если это необходимо -->
+              </div>
             </div>
           </div>
-
-          <div class="product-device shadow-sm d-none d-md-block"></div>
-          <div
-            class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-      </div>
-      <section class="container my-3">
-        <p class="h1 w-75">
-          Оставьте свой номер телефона и мы сразу свяжемся с Вами.
-        </p>
-        <p class="text-muted mx-auto my-2">
-          Назначьте время разговора с нами и мы поможем Вам выбрать вакансию и
-          ответим на Ваши вопросы.
-        </p>
-
-        
-      <form class="row g-3 align-items-center" method="POST" data-netlify="true" name="contact" >
-  <div class="col-md-3">
-    <div>
-      <input
-        type="text"
-        class="form-control rounded-pill"
-        placeholder="Введите ваше имя"
-        name="fio" required />
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div>
-      <input
-        type="tel"
-        class="form-control rounded-pill"
-        placeholder="Номер телефона"
-        name="tel" required />
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div>
-      <select
-        class="selectpicker form-control rounded-pill"
-        data-style="btn-outline-secondary"
-        data-size="3"
-        title="Время звонка"
-        name="Время звонка" required>
-        <option value="8:00-10:00">8:00-10:00</option>
-        <option value="10:00-12:00">10:00-12:00</option>
-        <option value="12:00-14:00">12:00-14:00</option>
-        <option value="14:00-16:00">14:00-16:00</option>
-        <option value="6:00-18:00">16:00-18:00</option>
-        <option value="18:00-20:00">18:00-20:00</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <input
-      style="
-        background: rgb(97, 28, 21);
-        background: linear-gradient(
-          0deg,
-          rgba(97, 28, 21, 1) 0%,
-          rgba(225, 42, 24, 1) 100%
-        );
-      "
-      class="btn btn-outline-warning rounded-pill btn-lg"
-      type="submit"
-      value="Записаться" />
-  </div>
-</form>
-
-
+      </section>
+      <section>
+        <div class="container">
+          <div class="container mx-auto row my-4">
+            <div class="col-4 mb-10 mb-lg-0 mx-auto">
+              <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Diana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Диана</h5>
+                      <p class="text-muted text-center">+48576706977</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a href="https://t.me/diana_dee_dee" target="_blank" class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a href="tel:+48576706977" target="_blank" class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a href="https://wa.me/48576706977" target="_blank" class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="container">
-        <h3 class="text-center mt-3 customH32">Работа в Европе</h3>
+      <section class="container-fluid" style="background-color: white">
+        <div class="container my-3">
+          <h2 class="h1 w-75">
+            Оставьте свой номер телефона и мы сразу свяжемся с Вами.
+          </h2>
+          <p class="text-muted mx-auto my-2">
+            Назначьте время разговора с нами и мы поможем Вам выбрать вакансию и
+            ответим на Ваши вопросы.
+          </p>
 
-        <div class="container mb-3">
-          <div class="d-lg-flex justify-content-between">
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/muL2.jpeg" class="img-fluid" />
-                  <a href="#!" name="muL2">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <a href=""></a>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Мастер Универсал <br />(Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Внутреняя отделка</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Дюссельдорф
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 300<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 2 Мужчины
-                    <a
-                      href="./pages/vakansii/muL2.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
+          <form
+            class="row g-3 align-items-center"
+            method="POST"
+            data-netlify="true"
+            name="contact">
+            <div class="col-md-3">
+              <div>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Введите ваше имя"
+                  name="fio"
+                  required />
               </div>
             </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/muL3.jpg" class="img-fluid" />
-                  <a href="#!">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Мастер Универсал (Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Внутреняя отделка</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Нюрнберг
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 600<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 2 Мужчины
-                    <a
-                      href="../pages/vakansii/muL3.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
+            <div class="col-md-3">
+              <div>
+                <input
+                  type="tel"
+                  class="form-control rounded-pill"
+                  placeholder="Номер телефона"
+                  name="tel"
+                  required />
               </div>
             </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/muV1.jpg" class="img-fluid" />
-                  <a href="#!" name="muV1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Мастер Универсал <br />(Голландия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Внутреняя отделка</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Амстердам
-                    (Голландия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 600<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 2 Мужчины
-                    <a
-                      href="../pages/vakansii/muV1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
+            <div class="col-md-3">
+              <div>
+                <select
+                  class="selectpicker form-control rounded-pill"
+                  data-style="btn-outline-secondary"
+                  data-size="3"
+                  title="Время звонка"
+                  name="Время звонка"
+                  required>
+                  <option value="8:00-10:00">8:00-10:00</option>
+                  <option value="10:00-12:00">10:00-12:00</option>
+                  <option value="12:00-14:00">12:00-14:00</option>
+                  <option value="14:00-16:00">14:00-16:00</option>
+                  <option value="6:00-18:00">16:00-18:00</option>
+                  <option value="18:00-20:00">18:00-20:00</option>
+                </select>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container mb-3">
-          <div class="d-lg-flex justify-content-between">
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img
-                    src="../img/vacansii/bruschadkaV1.jpeg"
-                    class="img-fluid" />
-                  <a href="#!" name="bruschadkaV1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <a href=""></a>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Брусчаточник <br />(Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Улица</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Дюссельдорф
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 500<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 2 Мужчины
-                    <a
-                      href="./pages/vakansii/bruschadkaV1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <input
+                style="
+                  background: rgb(97, 28, 21);
+                  background: linear-gradient(
+                    0deg,
+                    rgba(97, 28, 21, 1) 0%,
+                    rgba(225, 42, 24, 1) 100%
+                  );
+                "
+                class="btn btn-outline-warning rounded-pill btn-lg"
+                type="submit"
+                value="Записаться" />
             </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/brigadaV1.jpg" class="img-fluid" />
-                  <a href="#!" name="brigadaV1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">
-                      Бригада на прокладку кабеля (Германия)
-                    </p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Улица</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Дюссельдорф
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 500<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 3 Мужчины
-                    <a
-                      href="../pages/vakansii/brigadaV1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/metalV1.jpg" class="img-fluid" />
-                  <a href="#!" name="metalV1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Монтаж металлоконструкций (Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Улица</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Ганновер
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 500<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 4 Мужчины
-                    <a
-                      href="../pages/vakansii/metalV1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="d-lg-flex justify-content-between">
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/kranD1.jpg" class="img-fluid" />
-                  <a href="#!" name="kranD1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <a href=""></a>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Монтажники <br />(Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Улица</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Гамбург
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 500<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 4 Мужчины
-                    <a
-                      href="./pages/vakansii/kranD1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img
-                    src="../img/vacansii/plitochnikD1.jpg"
-                    class="img-fluid" />
-                  <a href="#!" name="plitochnikD1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Плиточник (Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Внутреняя отделка</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Цоцнегг
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 500<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 3 Мужчины
-                    <a
-                      href="../pages/vakansii/plitochnikiD1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="bg-image">
-                  <img src="../img/vacansii/demontazD1.jpg" class="img-fluid" />
-                  <a href="#!" name="demontazD1">
-                    <div
-                      class="mask"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold">
-                    <p class="H2 mb-0">Демонтаж <br />(Германия)</p>
-                    <span class="text-muted fs-6"
-                      ><i class="bi bi-dash-lg text-cstm-red fw-bold"></i
-                      >Разнарабочие</span
-                    >
-                  </h5>
-
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill text-cstm-red"></i> Ганновер
-                    (Германия)
-                  </p>
-                  <p>
-                    <i class="bi bi-cash text-cstm-red"></i> 2 000<i
-                      class="bi bi-currency-euro"></i>
-                    netto
-                  </p>
-                  <p class="mb-0">
-                    <i class="bi bi-person-fill text-cstm-red"></i> 4 Мужчины
-                    <a
-                      href="../pages/vakansii/demontazD1.html"
-                      class="w-100 d-block text-end m-0"
-                      ><i class="bi bi-plus-circle text-cstm-red fs-3 pe-2"></i
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mx-auto text-center my-5">
-          <a
-            href="./pages/vakansii.html"
-            type="button"
-            class="btn btn-outline-warning rounded-pill btn-lg"
-            style="
-              background: rgb(97, 28, 21);
-              background: linear-gradient(
-                0deg,
-                rgba(97, 28, 21, 1) 0%,
-                rgba(225, 42, 24, 1) 100%
-              );
-            "
-            data-mdb-ripple-color="#000000">
-            <i class="bi bi-search"></i> Посмотреть все вакансии
-          </a>
+          </form>
         </div>
       </section>
       <section
@@ -658,91 +350,685 @@
           );
         ">
         <div class="container-fluid col-md-6 text-white">
-          <div class="container mb-5 ">
-                <p class="pt-5 fs-1">Полезное</p>
-                <p class="">
-                  В этом разделе вы сможете найти много полезной информации о
-                  работе и жизни в Польше. Здесь вы найдете статьи, которые
-                  расскажут вам где и как оформить нужные документы для
-                  легального пребывания за границей. Также, сможете составить
-                  себе приблизительный план действий по поиску работы и
-                  планировании выезда; и узнать какой минимальный прожиточный
-                  минимум вам нужно будет иметь с собой на первое время. Как
-                  говорят: осведомленность - лучшее оружие.
-                </p>
-                <a
-                  href="./pages/informatia.html"
-                  type="button"
-                  class="btn btn-outline-warning rounded-pill btn-lg"
-                  data-mdb-ripple-color="#000000">
-                  <i class="bi bi-search"></i> Больше информации
-                </a>
-              </div>
-              
-                <div class="text-center align-items-end mb-3 row">
-                  <div class="col-md-4 fs-6">
-                    <span>Средний доход <br>
-в 2022 году</span>
-                        <p class="h2">5 662</p>
-                        <span>PLN</span>
-                  </div>
-                  <div class="col-md-4">
-                    <span>Иностранцы, работающие в Польше</span>
-                    <p class="h2">1 600 000</p>
-                    <span>в 2023 году</span>
-                  </div>
-                  <div class="col-md-4">
-                    <span>Новые рабочие места в Польше</span>
-                    <p class="h2">647 052</p>
-                    <span>в 2023 году</span>
-                  </div>
-                </div>
-                
-              
-              
-        </div>
-        <img class="bg-image col-6 d-lg-block  d-none"
-        style="background-repeat: no-repeat; background-size: cover; background-position: center;margin: auto;
-    height: 80%;"
-            src="./img/images/women-2.jpg"
-            alt="" />
-      </section>
-      <section>
-        <p class="h1 text-center customH1 mt-5">Новости</p>
-        <div class="container">
-          <div
-            class="row p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-            <div class="col-lg-6 px-0">
-              <h3 class="display-5">
-                В Польше наблюдается острый недостаток строителей.
-              </h3>
-              <p class="lead my-3">
-                В Варшаве и других городах Польши сотни открытых вакансий для
-                строителей — чтобы заполнить недостаток, бизнес нанимает рабочих
-                из самых разных уголков земли ...
-              </p>
-              <p class="lead mb-0">
-                <a
-                  href="./pages/news/public1.html"
-                  class="text-body-emphasis fw-bold"
-                  >Читать дальше ...</a
-                >
-              </p>
+          <div class="container mb-5">
+            <p class="pt-5 fs-1">Полезное</p>
+            <p class="">
+              В этом разделе вы сможете найти много полезной информации о работе
+              и жизни в Польше. Здесь вы найдете статьи, которые расскажут вам
+              где и как оформить нужные документы для легального пребывания за
+              границей. Также, сможете составить себе приблизительный план
+              действий по поиску работы и планировании выезда; и узнать какой
+              минимальный прожиточный минимум вам нужно будет иметь с собой на
+              первое время. Как говорят: осведомленность - лучшее оружие.
+            </p>
+            <a
+              href="../informatia.html"
+              type="button"
+              class="btn btn-outline-warning rounded-pill btn-lg"
+              data-mdb-ripple-color="#000000">
+              <i class="bi bi-search"></i> Больше информации
+            </a>
+          </div>
+
+          <div class="text-center align-items-end mb-3 row">
+            <div class="col-md-4 fs-6">
+              <span
+                >Средний доход <br />
+                в 2022 году</span
+              >
+              <p class="h2">5 662</p>
+              <span>PLN</span>
             </div>
-            <div class="bg-image col-lg-6">
-              <img
-                class="img-fluid w-100 h-100"
-                src="./img/news/post1.jpg"
-                alt="" />
+            <div class="col-md-4">
+              <span>Иностранцы, работающие в Польше</span>
+              <p class="h2">1 600 000</p>
+              <span>в 2023 году</span>
+            </div>
+            <div class="col-md-4">
+              <span>Новые рабочие места в Польше</span>
+              <p class="h2">647 052</p>
+              <span>в 2023 году</span>
             </div>
           </div>
         </div>
+        <img
+          class="bg-image col-6 d-lg-block d-none"
+          style="
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+            height: 80%;
+          "
+          src="../../img/images/women-2.jpg"
+          alt="" />
+      </section>
+      <section>
+        <div class="h1 customH1 text-center mt-5">Наши Менеджеры</div>
+        <div
+          id="myCarousel"
+          class="carousel slide mb-6 mt-5"
+          data-bs-ride="carousel">
+          <div class="carousel-inner my-3">
+            <div class="carousel-item active">
+              <div class="container mx-auto row">
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Artur.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Артур</h5>
+                      <p class="text-muted text-center">+37369460354</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Smocvin"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37369460354"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37369143766"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-10 mb-lg-4">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Ivan.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Иван</h5>
+                      <p class="text-muted text-center">+37360281829</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="viber://chat?number=%2B37360281829"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37360281829"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37360281829"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Lilia.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Лилия</h5>
+                      <p class="text-muted text-center">+37360043989</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/liliaetalon"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37360043989"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37360043989"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container mx-auto row">
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Ivan.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Иван</h5>
+                      <p class="text-muted text-center">+37360281829</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="viber://chat?number=%2B37360281829"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37360281829"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37360281829"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-10 mb-lg-4">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Lilia.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Лилия</h5>
+                      <p class="text-muted text-center">+37360043989</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/liliaetalon"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37360043989"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37360043989"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Tatiana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Татьяна</h5>
+                      <p class="text-muted text-center">+37368472992</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Tasiazagotskaya"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37368472992"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37368472992"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container mx-auto row">
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Lilia.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Лилия</h5>
+                      <p class="text-muted text-center">+37360043989</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/liliaetalon"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37360043989"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37360043989"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-10 mb-lg-4">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Tatiana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Татьяна</h5>
+                      <p class="text-muted text-center">+37368472992</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Tasiazagotskaya"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37368472992"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37368472992"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Diana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Диана</h5>
+                      <p class="text-muted text-center">+48576706977</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/diana_dee_dee"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container mx-auto row">
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Tatiana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Татьяна</h5>
+                      <p class="text-muted text-center">+37368472992</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Tasiazagotskaya"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37368472992"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37368472992"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-10 mb-lg-4">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Diana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Диана</h5>
+                      <p class="text-muted text-center">+48576706977</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/diana_dee_dee"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Artur.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Артур</h5>
+                      <p class="text-muted text-center">+37369460354</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Smocvin"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37369460354"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37369143766"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container mx-auto row">
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Tatiana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Татьяна</h5>
+                      <p class="text-muted text-center">+37368472992</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Tasiazagotskaya"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37368472992"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37368472992"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-10 mb-lg-4">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Artur.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Артур</h5>
+                      <p class="text-muted text-center">+37369460354</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/Smocvin"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+37369460354"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/37369143766"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                  <div class="h-100">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="../../img/managers/Diana.jpg"
+                        class="rounded-circle shadow-5-strong"
+                        alt=""
+                        style="width: 150px; height: 150px"
+                        aria-controls="#picker-editor" />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="fw-bold text-center">Диана</h5>
+                      <p class="text-muted text-center">+48576706977</p>
+                      <ul
+                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
+                        <a
+                          href="https://t.me/diana_dee_dee"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="telegramAnim bi bi-telegram fs-2"></i>
+                        </a>
+                        <a
+                          href="tel:+48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="bi bi-phone-vibrate fs-2"></i>
+                        </a>
+                        <a
+                          href="https://wa.me/48576706977"
+                          target="_blank"
+                          class="px-1 iconCustom d-block">
+                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="mx-auto text-center my-5">
+          <a
+            href="../contact.html"
+            type="button"
+            class="btn btn-outline-warning rounded-pill btn-lg"
+            style="
+              background: rgb(97, 28, 21);
+              background: linear-gradient(
+                0deg,
+                rgba(97, 28, 21, 1) 0%,
+                rgba(225, 42, 24, 1) 100%
+              );
+            "
+            data-mdb-ripple-color="#000000">
+            <i class="bi bi-search"></i> Перейти в контакты
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <p class="h1 text-center customH1 mt-5">Новости</p>
+
         <div class="container">
           <div class="d-lg-flex justify-content-between">
             <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
               <div class="backgroundEffect"></div>
               <div class="pic">
-                <img class="" src="./img/news/post2.jpg" alt="" />
+                <img class="" src="../../img/news/post1.jpg" alt="" />
                 <div class="date">
                   <span class="day">18</span> <span class="month">sept</span>
                   <span class="year">2023</span>
@@ -750,16 +1036,19 @@
               </div>
               <div class="content">
                 <p class="h-1 mt-4">
-                  В Польше рекордно низкие цены на ж/д билеты!
+                  В Польше наблюдается острый недостаток строителей.
                 </p>
                 <p class="text-muted mt-3">
-                  Польский железнодорожный перевозчик PKP Intercity порадовал
-                  всех, предоставив невероятные скидки...
+                  В Варшаве и других городах Польши сотни открытых вакансий для
+                  строителей — чтобы заполнить недостаток, бизнес нанимает
+                  рабочих из самых разных уголков земли ...
                 </p>
                 <div
                   class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                  <a href="./pages/news/public1.html" class="btn btn-primary">
-                    Читать далее&nbsp<span class="bi bi-arrow-right"></span>
+                  <a
+                    href="../../pages/news/public1.html"
+                    class="btn btn-primary">
+                    Читать далее<span class="fas fa-arrow-right"></span>
                   </a>
                   <div
                     class="d-flex align-items-center justify-content-center foot">
@@ -771,7 +1060,7 @@
             <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
               <div class="backgroundEffect"></div>
               <div class="pic">
-                <img class="" src="././img/drivers/slide-1.jpeg" alt="" />
+                <img class="" src="../../img/drivers/slide-1.jpeg" alt="" />
                 <div class="date">
                   <span class="day">18</span> <span class="month">Sept</span>
                   <span class="year">2023</span>
@@ -787,7 +1076,7 @@
                 <div
                   class="d-flex align-items-center justify-content-between mt-3 pb-3">
                   <a
-                    href="./pages/kategogy/driver1.html"
+                    href="../../pages/kategogy/driver1.html"
                     class="btn btn-primary">
                     Читать дальше&nbsp;<span class="bi bi-arrow-right"></span>
                   </a>
@@ -817,7 +1106,9 @@
                 </p>
                 <div
                   class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                  <a href="./pages/kategogy/work3.html" class="btn btn-primary">
+                  <a
+                    href="../../pages/kategogy/work3.html"
+                    class="btn btn-primary">
                     Читать дальше &nbsp;<span class="bi bi-arrow-right"></span>
                   </a>
                   <div
@@ -828,548 +1119,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="h1 customH1 text-center mt-5">Наши Менеджеры</div>
-        <div
-          id="myCarousel"
-          class="carousel slide mb-6 mt-5"
-          data-bs-ride="carousel">
-          <div class="carousel-inner my-3">
-            <div class="carousel-item active">
-              <div class="container mx-auto row">
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="./img/managers/Artur.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Артур</h5>
-                      <p class="text-muted text-center">+37369460354</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-10 mb-lg-4">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Ivan.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Иван</h5>
-                      <p class="text-muted text-center">+37360281829</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="viber://chat?number=%2B37360281829"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+37360281829"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/37360281829"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Lilia.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Лилия</h5>
-                      <p class="text-muted text-center">+37360043989</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/liliaetalon"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+37360043989"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/37360043989"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container mx-auto row">
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="./img/managers/Ivan.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Иван</h5>
-                      <p class="text-muted text-center">+37360281829</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="viber://chat?number=%2B37360281829"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+37360281829"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/37360281829"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-10 mb-lg-4">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="./img/managers/Lilia.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Лилия</h5>
-                      <p class="text-muted text-center">+37360043989</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/liliaetalon"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+37360043989"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/37360043989"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="./img/managers/Tatiana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Татьяна</h5>
-                      <p class="text-muted text-center">+37368472992</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container mx-auto row">
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Lilia.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Лилия</h5>
-                      <p class="text-muted text-center">+37360043989</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/liliaetalon"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+37360043989"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/37360043989"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-10 mb-lg-4">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Tatiana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Татьяна</h5>
-                      <p class="text-muted text-center">+37368472992</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Diana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Диана</h5>
-                      <p class="text-muted text-center">+48576706977</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/diana_dee_dee"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container mx-auto row">
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Tatiana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Татьяна</h5>
-                      <p class="text-muted text-center">+37368472992</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-10 mb-lg-4">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Diana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Диана</h5>
-                      <p class="text-muted text-center">+48576706977</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/diana_dee_dee" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+48576706977" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/48576706977" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Artur.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Артур</h5>
-                      <p class="text-muted text-center">+37369460354</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container mx-auto row">
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Tatiana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Татьяна</h5>
-                      <p class="text-muted text-center">+37368472992</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-10 mb-lg-4">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Artur.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Артур</h5>
-                      <p class="text-muted text-center">+37369460354</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
-                  <div class="h-100">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        src="../img/managers/Diana.jpg"
-                        class="rounded-circle shadow-5-strong"
-                        alt=""
-                        style="width: 150px; height: 150px"
-                        aria-controls="#picker-editor" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="fw-bold text-center">Диана</h5>
-                      <p class="text-muted text-center">+48576706977</p>
-                      <ul
-                        class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/diana_dee_dee"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="telegramAnim bi bi-telegram fs-2"></i>
-                        </a>
-                        <a
-                          href="tel:+48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="bi bi-phone-vibrate fs-2"></i>
-                        </a>
-                        <a
-                          href="https://wa.me/48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
-                          <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="mx-auto text-center my-5">
-          <a
-            href="./pages/contact.html"
-            type="button"
-            class="btn btn-outline-warning rounded-pill btn-lg"
-            style="
-              background: rgb(97, 28, 21);
-              background: linear-gradient(
-                0deg,
-                rgba(97, 28, 21, 1) 0%,
-                rgba(225, 42, 24, 1) 100%
-              );
-            "
-            data-mdb-ripple-color="#000000">
-            <i class="bi bi-search"></i> Перейти в контакты
-          </a>
         </div>
       </section>
       <section
@@ -1396,17 +1145,17 @@
             </div>
             <div class="col-lg-6 d-lg-block my-auto">
               <form
-                name="email" method="POST" data-netlify="true"
+                name="email"
+                method="POST"
+                data-netlify="true"
                 class="d-flex flex-column text-white align-items-start gap-3">
                 <input
-                required
-                name="Почта"
+                  name="Почта"
                   type="email"
                   placeholder="ваша почта@gmail.com"
                   class="rounded-4 w-50" />
                 <div class="d-flex">
                   <input
-                  
                     type="checkbox"
                     class="form-check-input"
                     id=""
@@ -1426,7 +1175,8 @@
                     required="" /><label
                     class="px-3"
                     for="Получай регулярные оповещения о новых предложениях работы"
-                    >Получай регулярные оповещения о новых предложениях работы</label
+                    >Получай регулярные оповещения о новых предложениях
+                    работы</label
                   >
                 </div>
                 <div class="d-flex">
@@ -1442,17 +1192,17 @@
                   >
                 </div>
                 <input
-      style="
-        background: rgb(97, 28, 21);
-        background: linear-gradient(
-          0deg,
-          rgba(97, 28, 21, 1) 0%,
-          rgba(225, 42, 24, 1) 100%
-        );
-      "
-      class="btn btn-outline-warning rounded-pill btn-lg"
-      type="submit"
-      value="Записаться" />
+                  style="
+                    background: rgb(97, 28, 21);
+                    background: linear-gradient(
+                      0deg,
+                      rgba(97, 28, 21, 1) 0%,
+                      rgba(225, 42, 24, 1) 100%
+                    );
+                  "
+                  class="btn btn-outline-warning rounded-pill btn-lg"
+                  type="submit"
+                  value="Записаться" />
               </form>
             </div>
           </div>
@@ -1536,9 +1286,7 @@
           </div>
         </div>
       </section>
-      
     </main>
-    
     <div class="container-fluid bg-black">
       <footer class="py-5 container text-white">
         <div
@@ -1567,5 +1315,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
+
   </body>
 </html>

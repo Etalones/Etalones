@@ -112,7 +112,7 @@
         // On the other hand, just using `getAttribute` is not enough as
         // the `nonce` attribute is reset to an empty string whenever it
         // becomes browsing-context connected.
-        // See https://github.com/whatwg/html/issues/2369
+        // See https://github.com/whatwg/pages/issues/2369
         // See https://html.spec.whatwg.org/#nonce-attributes
         // The `node.getAttribute` check was added for the sake of
         // `jQuery.globalEval` so that it can fake a nonce-containing node
