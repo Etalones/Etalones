@@ -71,7 +71,7 @@ body a{
     }
 }
 
-.vnutr{}
+
 .new {
     animation: flash 1s infinite;
 }
@@ -226,10 +226,12 @@ body a{
 
 /* test */
 
+
+
 .card {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
-  height: 520px;
+  height: max-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #fff;
   transition: all 0.5s ease;
@@ -239,7 +241,12 @@ body a{
   overflow: hidden;
   color: var(--text-color)!important;
 }
-
+@media (max-width: 987px){
+.card{
+  max-width: 100%;
+  width: 100%;
+}
+}
 .card .backgroundEffect {
   bottom: 0;
   height: 0px;
