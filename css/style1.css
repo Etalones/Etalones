@@ -13,6 +13,20 @@ font-family: Comfortaa,sans-serif!important;
 body a{
   color:var(--text-color) ;
 }
+.noMore::after{
+  content: "Набор приостановлен";
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgba(130, 130, 130, 0.5); /* Задайте цвет фона, если нужно подсветить текст */
+  color: white; /* Задайте цвет текста */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 32px;
+}
 .linkForNav {
   text-decoration: none !important;
 }
@@ -91,7 +105,11 @@ body a{
   left: 0;
 }
 
-
+.SubHeader{
+z-index: 1;
+background-color: #000000dc;
+height: 60px;
+}
 
 .cstmSubHeader {
   

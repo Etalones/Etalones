@@ -21,6 +21,7 @@
       rel="stylesheet" />
 
     <script defer src="./js/scrollNavbar.js"></script>
+    <script defer src="./js/selectTom.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -51,7 +52,14 @@
       sizes="16x16"
       href="../img/favicon//favicon-16x16.png" />
     <link rel="manifest" href="../img/favicon//site.webmanifest" />
-    <title>Etalones S&B</title>
+    <meta name="description" content="Официальный сайт польской строительной компании Etalones S&B. Работа в Германии, официальное трудоустройство, вакансии для строителей в Европе.">
+    <meta name="keywords" content="Etalones S&B, работа в Европе, Германии, Бельгии, Нидерландах">
+    <meta name="author" content="Etalones S&B">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Etalones S&B | Польская строительная фирма">
+    <meta name="og:description" content="Официальный сайт Польской строительной фирмы Etalones S&B">
+    <meta name="og:image" content="./img/Logo_red.png">
+    <title>Etalones S&B | Работа в Европе</title>
   </head>
   <body>
     <nav
@@ -76,52 +84,55 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link customItem dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-current="page"
-                href="./pages/vakansii.html"
-                >Вакансии</a
-              >
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./pages/./vakansii.html#armaturaL1"
-                    >Арматура</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./pages/./vakansii.html#bruschadkaV1"
-                    >Брусчатка</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./pages/./vakansii.html#muL1"
-                    >Мастер-универсал</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./pages/./vakansii.html#dveriL1"
-                    >Работа с деревом</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="./pages/./vakansii.html#demontazD1"
-                    >Демонтаж</a
-                  >
-                </li>
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle customItem" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Вакансии
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./pages/vakansii.html">Смотреть все</a></li>
+            <li><a class="dropdown-item" href="./pages/vakansii.html?show-new">Новые</a></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="./pages/vakansii.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Внутреняя отделка
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="./pages/vakansii.html#muL2">Универсалы</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#plitochnikD1">Плитка</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#gipsT1">Гипсокартон</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#muV1">Штукатурка</a></li>
               </ul>
             </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="./pages/vakansii.html#brigadaV1" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                На улице
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="./pages/vakansii.html#armaturaL1">Монолит</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#bruschadkaV1">Брусчатка</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="./pages/vakansii.html#electric1" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Электрики
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="./pages/vakansii.html#sunPanD2">Солнечные панели</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#electric1">Монтаж</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#electric1">Подключение шкафов</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="./pages/vakansii.html#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                С знанием англ/нем языка
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="./pages/vakansii.html#brgdT1">Бригадир</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#muV1">Мастер универсал</a></li>
+                <li><a class="dropdown-item" href="./pages/vakansii.html#electric1">Электрик</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
             <li class="nav-item">
               <a class="nav-link customItem" href="./pages/informatia.html"
                 >Полезное</a
@@ -150,10 +161,14 @@
                 >Контакты</a
               >
             </li>
+            
           </ul>
         </div>
       </div>
     </nav>
+   
+
+
     <main>
       <div style="position: relative">
         

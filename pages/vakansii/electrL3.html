@@ -9,10 +9,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  
-      <script
-      defer
-      src="../../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../../css/style1.css" />
     <link rel="stylesheet" href="../../css/theme-elements.css" />
     <link
@@ -42,13 +39,12 @@
     <title>Etalones S&B</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg position-absolute w-100 backgroundGr fixed-top" >
-      <div class="container  d-flex justify-content-between">
-        <a class="navbar-brandm-0 w-50" href="/"
-          ><img class="w-25" src="../../img/logoWhite.png" alt="logo"
+    <nav class="navbar navbar-expand-lg sticky-top backgroundGr">
+     <div class="container d-flex justify-content-between">
+        <a class="navbar-brand m-0 w-50" href="/"
+          ><img  class="w-25" src="../../img/logoWhite.png" alt="logo"
         /></a>
-       <button
+         <button
         style="    
     
     color: white;
@@ -63,51 +59,21 @@
           <i class="bi bi-list text-white fs-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ">
             <li class="nav-item dropdown">
               <a
                 class="nav-link customItem dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-current="page"
-                href="../vakansii.html"
+                href="./pages/vakansii.html"
                 >Вакансии</a
               >
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="../vakansii.html#armaturaL1"
-                    >Арматура</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="../../pages/vakansii.html#bruschadkaV1"
-                    >Брусчатка</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="../../pages/vakansii.html#muL1"
-                    >Мастер-универсал</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="../../pages/vakansii.html#dveriL1"
-                    >Работа с деревом</a
-                  >
-                </li>
-                <li class="dropdown-item">
-                  <a
-                    class="text-black linkForNav"
-                    href="../../pages/vakansii.html#demontazD1"
-                    >Демонтаж</a
-                  >
-                </li>
+              <ul class="dropdown-menu ">
+                <li class="dropdown-item "><a class="text-black linkForNav" href="../../pages/vakansii.html#armaturaL1">Арматура</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/vakansii.html#bruschadkaV1">Брусчатка</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/vakansii.html#muL1">Мастер-универсал</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/vakansii.html#dveriL1">Работа с деревом</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/vakansii.html#demontazD1">Демонтаж</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -116,11 +82,23 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link customItem" href="../../pages/news.html"
-                >Новости</a
-              >
+              <a class="nav-link customItem" href="../../pages/news.html">Новости</a>
             </li>
-
+           <li class="nav-item dropdown">
+              <a
+                class="nav-link customItem dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+                href="#"
+                >Соискателям</a
+              >
+              <ul class="dropdown-menu ">
+                <li class="dropdown-item "><a class="text-black linkForNav" href="../../pages/predlojenia-dlia-4lits.html">Предложения для частных лиц</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/predlojenia-dlia-firm.html">Предложения для юредических лиц</a></li>
+                <li class="dropdown-item"><a class="text-black linkForNav" href="../../pages/personCV.html">Заполнить CV</a></li>
+                
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link customItem" href="../../pages/contact.html"
                 >Контакты</a
@@ -132,45 +110,72 @@
     </nav>
 
     <main>
-      <div class="sticky-top SubHeader" >
-          <div class="container d-flex justify-content-between w-100 ">
-            <a class="p-3 cstmSubHeader text-decoration-none fw-bold" href="/"><img src="../../img/svg/logoRed.svg" alt="logo" style="width: 35px;">&nbsp;Etalones S&B</a
-            ><a class="p-3 cstmSubHeader d-flex align-items-center" href="../vakansii.html#brgdT1"><i class="bi bi-arrow-bar-left fs-4"></i>К вакансиям</a>
+      <section
+        class="py-5 text-center container-fluid"
+        style="
+          background-image: url(../../img/contacts/mac_and_two_people.jpg);
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        ">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-bold">Стань нашим партнёром</h1>
+
+            <p>
+              <a href="../predlojenia-dlia-4lits.html" class="btn btn-warning fw-bold my-2"
+                >Предложения для частных лиц</a
+              >
+              <a href="../predlojenia-dlia-firm.html" class="btn btn-warning fw-bold my-2"
+                >Предложения для фирм</a
+              >
+            </p>
           </div>
         </div>
-      <div class="container-fluid m-0 p-0">
-        
-        <div class="justify-content-center d-flex" style="z-index: -1">
-          <video 
-            width="100%"
-            
-            loop="loop"
-            autoplay
-            playsinline
-            muted
-            src="../../img/vacansii/brgdT1/tractor.mp4"></video>
+      </section>
+      <section class="container">
+        <div class="container-fluid d-flex justify-content-between">
+          <h1 class="fw-bold text-cstm-red my-5">Работа в Европе</h1>
+          <a
+            href="../vakansii.html#electrL3"
+            type="button"
+            class="btn btn-outline-warning btn-lg my-5"
+            style="
+              border-radius: 30px;
+              height: max-content;
+              background: rgb(97, 28, 21);
+              background: linear-gradient(
+                0deg,
+                rgba(97, 28, 21, 1) 0%,
+                rgba(225, 42, 24, 1) 100%
+              );
+            "
+            data-mdb-ripple-color="#000000">
+           <i class="bi bi-box-arrow-in-left text-warning"></i>Вернуться к вакансиям
+          </a>
         </div>
-        <div class="testriple"></div>
-      </div>
+      </section>
 
       <section class="background-grey praca-oferta p-b-40">
         <div class="container">
           <div class="bg-white p-4">
             <div class="row no-margin">
               <div class="col-md-8 no-padding">
-                <h2 class="m-b-15">Бригадир</h2>
+                <h2 class="m-b-15">Электрик</h2>
                 <div class="kategoria">
                   <a href="/">Etalones S&B</a> /
-                  <a href="../vakansii.html">Вакансии</a> / Бригадир
+                  <a href="../vakansii.html">Вакансии</a> / Электрик
                 </div>
                 <div class="miasto p-t-30 p-b-20">
-                  <i class="bi bi-geo-alt-fill"></i> Дюссельдорф, Германия
+                  <i class="bi bi-geo-alt-fill"></i> Брюссель, Германия
                 </div>
               </div>
               <div class="col-md-4 no-padding">
                 <div class="col-sm-6 col-md-9 col-lg-8 no-padding">
                   <div class="effect social-links mb-3">
-                    <img src="../../img/vacansii/brgdT1/brgdT1.jpg" alt="Бригадир" />
+                    <img
+                      src="../../img/vacansii/electrL3/electrL3.jpg"
+                      alt=" Электрик" />
                   </div>
                 </div>
               </div>
@@ -181,32 +186,29 @@
                   <i class="bi bi-person-fill"></i>Вакансии
                 </div>
                 <div class="miejsc">
-                  1<br /><span style="font-size: 18px">мужчина</span>
+                  2<br /><span style="font-size: 18px">мужчины</span>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="pddpo">
                   <i class="bi bi-cash"></i>Вознаграждение.
                 </div>
-                <p>Ставка в час 17&nbsp;€ нетто.</p>
-                <p>В месяц&nbsp;3500&nbsp;€ нетто.&nbsp;</p>
+                <p>Ставка в час 12&nbsp;€ нетто.</p>
+                <p>В месяц&nbsp;2500&nbsp;€ нетто.&nbsp;</p>
               </div>
               <div class="col-md-4">
                 <div class="pddpo">
                   <i class="bi bi-house-fill"></i>Проживание
                 </div>
-                <p>Бесплатно</p>
+                <p>300€/месяц</p>
               </div>
             </div>
             <div class="row opisoferta no-margin m-b-20">
               <div class="col-md-12">
                 <h2 class="m-b-15">Информация про работу</h2>
-                <ul>
-                  <li><p>Строительство домов под ключ</p></li>
-                  <li><p>Каменные дома</p></li>
-                  <li><p>Бригада 5-6 человек</p></li>
-                </ul>
-
+                <p>Работа по всей Бельгии</p>
+                <p>Монтаж кабелей</p>
+                <p>Подключение щитов</p>
                 <p><strong>Вид договора:</strong></p>
                 <ul>
                   <li>гражданско-правовой – Umowa zlecenie.</li>
@@ -214,6 +216,13 @@
                 <!-- Здесь могут быть дополнительные поля, если это необходимо -->
               </div>
             </div>
+            <!-- <div class="row miastobox no-margin">
+                <div class="col-md-6">
+                    <h2 class="m-b-15">Информация о городе</h2>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -224,28 +233,28 @@
               <div class="h-100">
                 <div class="d-flex justify-content-center">
                   <img
-                    src="../../img/managers/Tatiana.jpg"
+                    src="../../img/managers/Lilia.jpg"
                     class="rounded-circle shadow-5-strong"
                     alt=""
                     style="width: 150px; height: 150px"
                     aria-controls="#picker-editor" />
                 </div>
                 <div class="card-body">
-                  <h5 class="fw-bold text-center">Татьяна</h5>
-                  <p class="text-muted text-center">+37368472992</p>
+                  <h5 class="fw-bold text-center">Лилия</h5>
+                  <p class="text-muted text-center">+37360043989</p>
                   <ul
                     class="list-unstyled mb-0 d-flex justify-content-center gap-2">
                     <a
-                      href="https://t.me/Tasiazagotskaya"
+                      href="https://t.me/liliaetalon"
                       target="_blank"
                       class="px-1 iconCustom d-block">
                       <i class="telegramAnim bi bi-telegram fs-2"></i>
                     </a>
-                    <a href="tel:+37368472992" class="px-1 iconCustom d-block">
+                    <a href="tel:+37360043989" class="px-1 iconCustom d-block">
                       <i class="bi bi-phone-vibrate fs-2"></i>
                     </a>
                     <a
-                      href="https://wa.me/37368472992"
+                      href="https://wa.me/37360043989"
                       target="_blank"
                       class="px-1 iconCustom d-block">
                       <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
@@ -339,70 +348,65 @@
           );
         ">
         <div class="container-fluid col-md-6 text-white">
-          <div class="container mb-5">
-            <p class="pt-5 fs-1">Полезное</p>
-            <p class="">
-              В этом разделе вы сможете найти много полезной информации о работе
-              и жизни в Польше. Здесь вы найдете статьи, которые расскажут вам
-              где и как оформить нужные документы для легального пребывания за
-              границей. Также, сможете составить себе приблизительный план
-              действий по поиску работы и планировании выезда; и узнать какой
-              минимальный прожиточный минимум вам нужно будет иметь с собой на
-              первое время. Как говорят: осведомленность - лучшее оружие.
-            </p>
-            <a
-              href="../informatia.html"
-              type="button"
-              class="btn btn-outline-warning rounded-pill btn-lg"
-              data-mdb-ripple-color="#000000">
-              <i class="bi bi-search"></i> Больше информации
-            </a>
-          </div>
-
-          <div class="text-center align-items-end mb-3 row">
-            <div class="col-md-4 fs-6">
-              <span
-                >Средний доход <br />
-                в 2022 году</span
-              >
-              <p class="h2">5 662</p>
-              <span>PLN</span>
-            </div>
-            <div class="col-md-4">
-              <span>Иностранцы, работающие в Польше</span>
-              <p class="h2">1 600 000</p>
-              <span>в 2023 году</span>
-            </div>
-            <div class="col-md-4">
-              <span>Новые рабочие места в Польше</span>
-              <p class="h2">647 052</p>
-              <span>в 2023 году</span>
-            </div>
-          </div>
+          <div class="container mb-5 ">
+                <p class="pt-5 fs-1">Полезное</p>
+                <p class="">
+                  В этом разделе вы сможете найти много полезной информации о
+                  работе и жизни в Польше. Здесь вы найдете статьи, которые
+                  расскажут вам где и как оформить нужные документы для
+                  легального пребывания за границей. Также, сможете составить
+                  себе приблизительный план действий по поиску работы и
+                  планировании выезда; и узнать какой минимальный прожиточный
+                  минимум вам нужно будет иметь с собой на первое время. Как
+                  говорят: осведомленность - лучшее оружие.
+                </p>
+                <a
+                  href="../informatia.html"
+                  type="button"
+                  class="btn btn-outline-warning rounded-pill btn-lg"
+                  data-mdb-ripple-color="#000000">
+                  <i class="bi bi-search"></i> Больше информации
+                </a>
+              </div>
+              
+                <div class="text-center align-items-end mb-3 row">
+                  <div class="col-md-4 fs-6">
+                    <span>Средний доход <br>
+в 2022 году</span>
+                        <p class="h2">5 662</p>
+                        <span>PLN</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>Иностранцы, работающие в Польше</span>
+                    <p class="h2">1 600 000</p>
+                    <span>в 2023 году</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>Новые рабочие места в Польше</span>
+                    <p class="h2">647 052</p>
+                    <span>в 2023 году</span>
+                  </div>
+                </div>
+                
+              
+              
         </div>
-        <img
-          class="bg-image col-6 d-lg-block d-none"
-          style="
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin: auto;
-            height: 80%;
-          "
-          src="../../img/images/women-2.jpg"
-          alt="" />
+        <img class="bg-image col-6 d-lg-block d-none"
+        style="background-repeat: no-repeat; background-size: cover; background-position: center;margin: auto;
+    height: 80%;"
+            src="../../img/images/women-2.jpg"
+            alt="" />
       </section>
       <section>
         <div class="h1 customH1 text-center mt-5">Наши Менеджеры</div>
-        <div
+                <div
           id="myCarousel"
           class="carousel slide mb-6 mt-5"
           data-bs-ride="carousel">
           <div class="carousel-inner my-3">
             <div class="carousel-item active">
               <div class="container mx-auto row">
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -417,21 +421,13 @@
                       <p class="text-muted text-center">+37369460354</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Smocvin"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37369460354"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37369143766"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
@@ -474,8 +470,7 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -515,8 +510,7 @@
             </div>
             <div class="carousel-item">
               <div class="container mx-auto row">
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -588,8 +582,7 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -604,21 +597,13 @@
                       <p class="text-muted text-center">+37368472992</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Tasiazagotskaya"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37368472992"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37368472992"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
@@ -629,8 +614,7 @@
             </div>
             <div class="carousel-item">
               <div class="container mx-auto row">
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -681,29 +665,20 @@
                       <p class="text-muted text-center">+37368472992</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Tasiazagotskaya"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37368472992"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37368472992"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -744,8 +719,7 @@
             </div>
             <div class="carousel-item">
               <div class="container mx-auto row">
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -760,21 +734,13 @@
                       <p class="text-muted text-center">+37368472992</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Tasiazagotskaya"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37368472992"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37368472992"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
@@ -796,30 +762,20 @@
                       <p class="text-muted text-center">+48576706977</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/diana_dee_dee"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/diana_dee_dee" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+48576706977" target="_blank" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/48576706977"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/48576706977" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -834,21 +790,13 @@
                       <p class="text-muted text-center">+37369460354</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Smocvin"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37369460354"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37369143766"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
@@ -859,8 +807,7 @@
             </div>
             <div class="carousel-item">
               <div class="container mx-auto row">
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -875,21 +822,13 @@
                       <p class="text-muted text-center">+37368472992</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Tasiazagotskaya"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Tasiazagotskaya" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37368472992"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37368472992" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37368472992"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37368472992" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
@@ -911,29 +850,20 @@
                       <p class="text-muted text-center">+37369460354</p>
                       <ul
                         class="list-unstyled mb-0 d-flex justify-content-center gap-2">
-                        <a
-                          href="https://t.me/Smocvin"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://t.me/Smocvin" target="_blank" class="px-1 iconCustom d-block">
                           <i class="telegramAnim bi bi-telegram fs-2"></i>
                         </a>
-                        <a
-                          href="tel:+37369460354"
-                          class="px-1 iconCustom d-block">
+                        <a href="tel:+37369460354" class="px-1 iconCustom d-block">
                           <i class="bi bi-phone-vibrate fs-2"></i>
                         </a>
-                        <a
-                          href="https://wa.me/37369143766"
-                          target="_blank"
-                          class="px-1 iconCustom d-block">
+                        <a href="https://wa.me/37369143766" target="_blank" class="px-1 iconCustom d-block">
                           <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
                         </a>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
+                <div class="col-12 col-md-4 col-lg-4 mb-10 mb-lg-4 d-none d-md-block">
                   <div class="h-100">
                     <div class="d-flex justify-content-center">
                       <img
@@ -972,6 +902,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
           <button
             class="carousel-control-prev"
@@ -992,7 +923,7 @@
         </div>
         <div class="mx-auto text-center my-5">
           <a
-            href="../contact.html"
+          href="../contact.html"
             type="button"
             class="btn btn-outline-warning rounded-pill btn-lg"
             style="
@@ -1017,7 +948,10 @@
             <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
               <div class="backgroundEffect"></div>
               <div class="pic">
-                <img class="" src="../../img/news/post1.jpg" alt="" />
+                <img
+                  class=""
+                  src="../../img/news/post1.jpg"
+                  alt="" />
                 <div class="date">
                   <span class="day">18</span> <span class="month">sept</span>
                   <span class="year">2023</span>
@@ -1029,8 +963,8 @@
                 </p>
                 <p class="text-muted mt-3">
                   В Варшаве и других городах Польши сотни открытых вакансий для
-                  строителей — чтобы заполнить недостаток, бизнес нанимает
-                  рабочих из самых разных уголков земли ...
+                строителей — чтобы заполнить недостаток, бизнес нанимает рабочих
+                из самых разных уголков земли ...
                 </p>
                 <div
                   class="d-flex align-items-center justify-content-between mt-3 pb-3">
@@ -1304,8 +1238,5 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
-
   </body>
 </html>
