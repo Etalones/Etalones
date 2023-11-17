@@ -460,6 +460,49 @@ height: 60px;
   height: 100%;
 }
 
+/* ------------------------------------ */
+
+.social-buttons1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.social-button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button1:hover {
+ transform: scale(1.2);
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons1 svg {
+  transition: 0.3s;
+  height: 100%;
+}
+/* ------------------------------------ */
+.dropdown-menu {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+}
+
+
+/* ------------------------------------ */
+
 .facebook {
   background-color: #3b5998;
 }
