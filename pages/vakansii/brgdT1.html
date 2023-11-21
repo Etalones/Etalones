@@ -28,23 +28,30 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../img/favicon/apple-touch-icon.png" />
+      href="../../img/favicon/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../img/favicon//favicon-32x32.png" />
+      href="../../img/favicon//favicon-32x32.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../img/favicon//favicon-16x16.png" />
+      href="../../img/favicon//favicon-16x16.png" />
     <link rel="manifest" href="../img/favicon//site.webmanifest" />
-    <title>Etalones S&B</title>
+     <meta name="description" content="Работа бригадиром, бригадир в Дюссельдорфе , работа для русскоязычных в Дюссельдорфе , Работа в Германии.">
+    <meta name="keywords" content="Etalones S&B, работа в Европе, работа в Германии, работа бригадиром в Дюссельдорфе ">
+    <meta name="author" content="Etalones S&B">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Etalones S&B | Работа бригадиром">
+    <meta name="og:description" content="Работа бригадиром в Дюссельдорфе.">
+    <meta name="og:image" content="../../img/Logo_red.png">
+    <title>Etalones S&B | Работа бригадиром в Дюссельдорфе</title>
   </head>
   <body>
-    <nav
-     class="navbar navbar-expand-lg  backgroundGr p-0">
+ <nav
+     class="navbar navbar-expand-lg  backgroundGr p-0 position-absolute w-100" style="z-index: 2;">
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand m-0 w-50" href="/"
           ><img  class="w-50" src="../../img/logoWhite.png" alt="logo"
@@ -236,33 +243,29 @@
     </nav>
 
     <main>
-      <div class="sticky-top SubHeader" >
+      <div class="sticky-top " style="z-index: 1; background-color: #000000dc">
           <div class="container d-flex justify-content-between w-100 ">
-            <a class="p-3 cstmSubHeader text-decoration-none fw-bold" href="/"><img src="../../img/svg/logoRed.svg" alt="logo" style="width: 35px;">&nbsp;Etalones S&B</a
+            <a class="p-3 cstmSubHeader text-decoration-none fw-bold" href="/"><img src="../../img/svg/logoRed.svg" alt="logo" style="width: 35px;">&nbsp;Главная</a
             ><a class="p-3 cstmSubHeader d-flex align-items-center" href="../vakansii.html#brgdT1"><i class="bi bi-arrow-bar-left fs-4"></i>К вакансиям</a>
           </div>
         </div>
-      <div class="container-fluid m-0 p-0">
-        
-        <div class="justify-content-center d-flex" style="z-index: -1">
-          <video 
+      <div class="justify-content-center d-flex " >
+       
+         <video 
             width="100%"
-            
+            style="z-index: -1; margin-bottom: -100px;"
             loop="loop"
             autoplay
             playsinline
             muted
             src="../../img/vacansii/brgdT1/tractor.mp4"></video>
-        </div>
-        <div class="testriple"></div>
       </div>
-
       <section class="background-grey praca-oferta p-b-40">
         <div class="container">
           <div class="bg-white p-4">
             <div class="row no-margin">
               <div class="col-md-8 no-padding">
-                <h2 class="m-b-15">Бригадир</h2>
+                <h1 class="h2 m-b-15">Работа бригадиром в Дюссельдорфе</h1>
                 <div class="kategoria">
                   <a href="/">Etalones S&B</a> /
                   <a href="../vakansii.html">Вакансии</a> / Бригадир
@@ -1412,5 +1415,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
 
+ <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg>
+    </button>
   </body>
 </html>
+

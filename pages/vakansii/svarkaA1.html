@@ -24,6 +24,7 @@
       rel="stylesheet" />
     <script defer src="../../js/selectTom.js"></script>
     <script defer src="../../js/scrollNavbar.js"></script>
+    
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -50,7 +51,7 @@
   </head>
   <body>
     <nav
-     class="navbar navbar-expand-lg  backgroundGr p-0">
+     class="navbar navbar-expand-lg  backgroundGr p-0 position-absolute w-100" style="z-index: 2;">
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand m-0 w-50" href="/"
           ><img  class="w-50" src="../../img/logoWhite.png" alt="logo"
@@ -257,7 +258,7 @@
             playsinline
             muted
            src="../../img/vacansii/svarkaD1/svarkaD1.mp4"
-           style="z-index: -1; margin: -100px;"></video>
+           style="z-index: -1; margin-bottom: -100px;"></video>
       </div>
 
       <section class="background-grey praca-oferta p-b-40">
@@ -360,6 +361,9 @@
           </div>
         </div>
       </section>
+
+ 
+      <!--  -->
 
       <section class="container-fluid" style="background-color: white">
         <div class="container my-3">
@@ -1411,7 +1415,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
 
+ <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg>
+    </button>
   </body>
 </html>
+
 
 

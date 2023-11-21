@@ -5830,16 +5830,18 @@ body.device-xxs .box-fancy [class*=col-]{
 	vertical-align: -2px;
 	margin-top: 2px;
 }
+
 .praca-oferta .smainfo p{
 	color:#333333;
 	padding:20px;
+	text-align: center;
 }
 .praca-oferta .smainfo .miejsc {
-	font-size:64px;
+	font-size:34px;
 	text-align:center;
 	color:#333;
-	margin-top:42px;
-	margin-bottom:50px;
+	margin-top:10px;
+	margin-bottom:20px;
 }
 .praca-oferta .smainfo p:first-of-type{
 	margin-bottom:0px;
