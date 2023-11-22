@@ -19,6 +19,118 @@ body a{
   color:var(--text-color) ;
 }
 
+/* navigation */
+nav{
+  display: flex;
+  flex-direction: row;
+}
+nav>:first-child{
+  display: flex;
+  justify-content: space-between;
+}
+.cstmNavigation{
+  padding: 0;
+  width: 100%;
+}
+.cstmNavigation>div>a>img{
+  width: 150px;
+}
+.burgerMenu{
+display: none;
+}
+@media(max-width:876px){
+  .burgerMenu{
+display: block;
+}
+#cssmenu{
+  display: none;
+}
+
+}
+
+/* multiselect */
+
+#cssmenu {padding: 0; margin: 0; border: 0; }
+#cssmenu ul, #cssmenu li {list-style: none; margin: 0; padding: 0;}
+#cssmenu ul {position: relative; z-index: 597; display: flex;}
+#cssmenu ul li { min-height: 1px; vertical-align: middle;}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
+#cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+#cssmenu ul ul li {float: none;}
+#cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
+#cssmenu ul li:hover > ul { visibility: visible;}
+#cssmenu ul ul {bottom: 0; left: 0;}
+#cssmenu ul ul {margin-top: 0; }
+#cssmenu ul ul li {font-weight: normal;}
+#cssmenu a { display: block; text-decoration: none; }
+
+
+
+  #cssmenu > ul { display: inline-block; }
+
+  #cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+
+
+
+    #cssmenu ul ul {
+      border-top: 4px solid var(--text-color);
+      text-transform: none;
+      /* min-width: 190px;  */
+}
+      #cssmenu ul ul a {
+        background: var(--text-color);
+        color: #FFF;
+        border: 1px solid var(--text-color);
+        border-top: 0 none;
+        line-height: 150%;
+        padding: 16px 20px; 
+}
+      #cssmenu ul ul ul { border-top: 0 none; }
+
+      #cssmenu ul ul li { position: relative }
+
+#cssmenu > ul > li > a { line-height: 48px;  }
+
+#cssmenu ul ul li:first-child > a { border-top: 1px solid #ff0000; }
+        #cssmenu ul ul li:hover > a { background: #ff0000; }
+
+        #cssmenu ul ul li:last-child > a {
+          border-radius: 0 0 3px 3px;
+          box-shadow: 0 1px 0 #ff0000; 
+}
+        #cssmenu ul ul li:last-child:hover > a { border-radius: 0 0 0 3px; }
+
+        #cssmenu ul ul li.has-sub > a:after {
+          content: '+';
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          margin-top: -8px;
+}
+
+ #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
+      background: #ff0000;
+      color: #FFF;
+}
+    #cssmenu ul li.has-sub > a:after {
+      content: '+';
+      margin-left: 5px; 
+}
+    #cssmenu ul li.last ul {
+      left: auto;
+      right: 0; 
+}
+      #cssmenu ul li.last ul ul {
+        left: auto;
+        right: 99.5%;
+}
+/* end multiselect */
 /*  */
  #scrollToTopBtn {
   opacity: 0.2;
@@ -38,7 +150,7 @@ body a{
       opacity: 1;
       transition: 0.5s;
     }
-/*  */
+/* ------------------------------------------- */
 .noMore::after{
   content: "Набор приостановлен";
   text-align: center;
@@ -454,11 +566,10 @@ height: 60px;
     background-color: #252525;
 }
 .social-buttons {
+  
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  
   padding: 15px 0;
   margin: 0;
 }
@@ -471,7 +582,6 @@ height: 60px;
   height: 50px;
   border-radius: 50%;
   margin: 0 10px;
-  
   box-shadow: 0px 0px 4px #00000027;
   transition: 0.3s;
 }
