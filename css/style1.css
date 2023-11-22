@@ -2,7 +2,7 @@
   --text-color: #AF0707;
   --text-shadow:#ffffff49;
   --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);
-
+  --border-menu:#ffeaea5e;
 
 }
 
@@ -11,8 +11,9 @@
 body {
 font-family: Comfortaa,sans-serif!important;
   background-color: #f2f2f2;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color:var(--text-color) ;
+
 }
 
 body a{
@@ -35,30 +36,108 @@ nav>:first-child{
 .cstmNavigation>div>a>img{
   width: 150px;
 }
+
+/* burger */
 .burgerMenu{
 display: none;
 }
-@media(max-width:876px){
-  .burgerMenu{
-display: block;
-position: absolute;
-top: 10px;
-right: 10px;
-}
-#cssmenu{
-  display: none;
-  width: 100px;
-}
-
-}
-
-/* multiselect */
-#cssmenu>ul>li>ul{
+/* #burgermenu{display: none;} */
+#burgermenu>ul>li>ul{
       display: flex;
     flex-direction: column;
     height: max-content;
     width: max-content;
 }
+
+
+#burgermenu {
+ 
+  z-index: 9999;
+  padding: 0; margin: auto; border: 0; 
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  background-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+#burgermenu ul, #burgermenu li {list-style: none; margin: 0; padding: 0;}
+#burgermenu ul {position: relative; z-index: 597; }
+#burgermenu ul li { min-height: 1px; vertical-align: middle;
+ }
+#burgermenu ul li.hover,
+#burgermenu ul li:hover {position: relative; z-index: 599; cursor: pointer;}
+#burgermenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; }
+#burgermenu ul ul li {float: none;}
+#burgermenu ul ul ul {top: 0; left: auto; top: 3rem; right: 0; width: max-content; text-align: center;}
+#burgermenu ul li:hover > ul { visibility: visible;}
+#burgermenu ul ul {bottom: 0; left: 0;}
+#burgermenu ul ul {margin-top: 0;  border: 0.23rem solid var(--border-menu);
+border-radius: 5px;}
+#burgermenu ul ul li {font-weight: normal;}
+#burgermenu a { display: block; text-decoration: none; }
+  /* #cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+} */
+    #burgermenu ul ul {
+      border-top: 4px solid #AF0707;
+      text-transform: none;
+      min-width: 190px; 
+}
+      #burgermenu ul ul a {
+        background: var(--text-color);
+        color: #FFF;
+        border: 1px solid var(--text-color);
+        border-top: 0 none;
+        line-height: 150%;
+        padding: 16px 20px; 
+         border: 0.23rem solid var(--border-menu);
+border-radius: 5px;
+}
+      #burgermenu ul ul ul { border-top: 0 none; }
+
+      #burgermenu ul ul li { position: relative; transition: all 0.13s; }
+
+
+
+        #burgermenu ul ul li:hover > a { background: #8c1616; transition: all 0.13s;}
+
+
+        #burgermenu ul ul li:last-child:hover > a { border-radius: 0 0 0 3px; }
+
+        /* #cssmenu ul ul li.has-sub > a:after {
+          content: '+';
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          margin-top: -8px;
+} */
+
+ #burgermenu ul li:hover > a, #burgermenu ul li.active > a {
+      background: #ff0000;
+      color: #FFF;
+}
+    #burgermenu ul li.has-sub > a:after {
+      content: '+';
+      margin-left: 5px; 
+}
+    #burgermenu ul li.last ul {
+      left: auto;
+      right: 0; 
+}
+      #burgermenu ul li.last ul ul {
+        left: auto;
+        right: 99.5%;
+}
+
+
+
+/* navigavion */
+
 .dropdownCstmItem{
     height: max-content;
     display: flex;
@@ -73,17 +152,17 @@ right: 10px;
 #cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
 #cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; }
 #cssmenu ul ul li {float: none;}
-/* #cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; } */
+#cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
 #cssmenu ul li:hover > ul { visibility: visible;}
 #cssmenu ul ul {bottom: 0; left: 0;}
 #cssmenu ul ul {margin-top: 0; }
 #cssmenu ul ul li {font-weight: normal;}
 #cssmenu a { display: block; text-decoration: none; }
-  #cssmenu:after, #cssmenu ul:after {
+  /* #cssmenu:after, #cssmenu ul:after {
     content: '';
     display: block;
     clear: both; 
-}
+} */
     #cssmenu ul ul {
       border-top: 4px solid var(--text-color);
       text-transform: none;
@@ -112,13 +191,13 @@ right: 10px;
 }
         #cssmenu ul ul li:last-child:hover > a { border-radius: 0 0 0 3px; }
 
-        #cssmenu ul ul li.has-sub > a:after {
+        /* #cssmenu ul ul li.has-sub > a:after {
           content: '+';
           position: absolute;
           top: 50%;
           right: 15px;
           margin-top: -8px;
-}
+} */
 
  #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
       background: #ff0000;
@@ -615,17 +694,20 @@ height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+ 
   border-radius: 50%;
   margin: 0 10px;
-  box-shadow: 0px 0px 4px #00000027;
+  box-shadow: 0px 0px 0px 2px #00000027;
   transition: 0.3s;
+}
+.social-button1 svg{
+   width: 30px;
+  height: 30px;
 }
 
 .social-button1:hover {
  transform: scale(1.2);
-  box-shadow: 0px 0px 6px 3px #00000027;
+  
 }
 
 .social-buttons1 svg {
@@ -759,3 +841,32 @@ transform: scale(1.1);
 transition: all 0.2s!important;
 }
 /* dddddddddddddddddddddddddddddddd */
+@media(max-width:876px){
+  .burgerMenu{
+display: block;
+position: absolute;
+top: 10px;
+right: 10px;
+}
+#cssmenu{
+  display: none;
+  
+}
+
+}
+
+/* @media(max-width:1050px){
+  nav{display: none;}
+} */
+@media(max-width:1200px){
+#cssmenu{
+  width: 100%;
+}
+.customItem{
+  font-size: 16px;
+}
+  #cssmenu ul li.has-sub > a:after {
+      content: '';
+      margin-left: 5px; 
+}
+}
