@@ -41,43 +41,49 @@ display: none;
 @media(max-width:876px){
   .burgerMenu{
 display: block;
+position: absolute;
+top: 10px;
+right: 10px;
 }
 #cssmenu{
   display: none;
+  width: 100px;
 }
 
 }
 
 /* multiselect */
+#cssmenu>ul>li>ul{
+      display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+}
+.dropdownCstmItem{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
 
-#cssmenu {padding: 0; margin: 0; border: 0; }
+#cssmenu {padding: 0; margin: auto; border: 0; }
 #cssmenu ul, #cssmenu li {list-style: none; margin: 0; padding: 0;}
 #cssmenu ul {position: relative; z-index: 597; display: flex;}
 #cssmenu ul li { min-height: 1px; vertical-align: middle;}
 #cssmenu ul li.hover,
 #cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;}
-#cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; width: 100%;}
+#cssmenu ul ul {visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; }
 #cssmenu ul ul li {float: none;}
-#cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; }
+/* #cssmenu ul ul ul {top: 0; left: auto; right: -99.5%; } */
 #cssmenu ul li:hover > ul { visibility: visible;}
 #cssmenu ul ul {bottom: 0; left: 0;}
 #cssmenu ul ul {margin-top: 0; }
 #cssmenu ul ul li {font-weight: normal;}
 #cssmenu a { display: block; text-decoration: none; }
-
-
-
-  #cssmenu > ul { display: inline-block; }
-
   #cssmenu:after, #cssmenu ul:after {
     content: '';
     display: block;
     clear: both; 
 }
-
-
-
-
     #cssmenu ul ul {
       border-top: 4px solid var(--text-color);
       text-transform: none;
@@ -95,7 +101,7 @@ display: block;
 
       #cssmenu ul ul li { position: relative }
 
-#cssmenu > ul > li > a { line-height: 48px;  }
+
 
 #cssmenu ul ul li:first-child > a { border-top: 1px solid #ff0000; }
         #cssmenu ul ul li:hover > a { background: #ff0000; }
@@ -602,7 +608,7 @@ height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px;
+  
 }
 
 .social-button1 {
