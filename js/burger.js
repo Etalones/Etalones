@@ -1,3 +1,4 @@
+console.log("working");
 document.addEventListener("DOMContentLoaded", function () {
   const burgerMenuButton = document.querySelector(".burgerMenu");
   const close = document.querySelector("#close__burger");
