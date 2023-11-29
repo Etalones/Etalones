@@ -66,7 +66,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1317736825603108&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <nav class="backgroundGr cstmNavigation container-fluid" style="z-index: 2">
+    <nav class="backgroundGr cstmNavigation container-fluid" >
       <div class="container d-flex justify-content-between w-100">
         <a class="me-5" href="/"
           ><img class="logo" src="../../img/logoWhite.png" alt="logo"
@@ -1739,7 +1739,34 @@ src="https://www.facebook.com/tr?id=1317736825603108&ev=PageView&noscript=1"
           </div>
         </div>
       </section>
-    </main>
+    <div class="wraper-anket1" id="anketWrapper">
+      <div class="section-1 section9">
+        <form 
+                name="lid"
+                method="POST"
+                data-netlify="true"
+         class="anketa-profession">
+          <div class="field">
+            <label for="person">Имя</label>
+            <input type="text" name="person" id="person" />
+          </div>
+          <div class="field">
+            <label for="phone">Номер телефона</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="field">
+            <label for="profesion">Профессия</label>
+            <input type="text" name="profesion" id="profesion" />
+          </div>
+
+          <input type="submit" id="button" value="Отправить" />
+          <img id="closeAnket1" src="./img/svg/closeAnket.svg" alt="" />
+        </form>
+
+        
+      </div>
+    </div>
+</main>
     <div class="container-fluid bg-black">
       <footer class="py-5 container text-white">
         <div
