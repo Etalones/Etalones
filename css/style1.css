@@ -40,6 +40,10 @@ nav>:first-child{
 .cstmNavigation>div>a>img{
   width: 150px;
 }
+.cstmVacSubHeader{
+  display: fixed;
+  top: 0;
+}
 .logo{
   align-self: center;
   margin: 0;
@@ -205,7 +209,17 @@ border-radius: 5px;
 #cssmenu ul ul {bottom: 0; left: 0;}
 #cssmenu ul ul {margin-top: 0; }
 #cssmenu ul ul li {font-weight: normal;}
-#cssmenu a { display: block; text-decoration: none; }
+#cssmenu a { display: block; text-decoration: none; transition: all ease-in-out 0.3s;}
+#cssmenu span { 
+  transition: all ease-in-out 0.3s;
+   background: var(--text-color);
+        color: #FFF;
+        border: 1px solid var(--text-color);
+        border-top: 0 none;
+        line-height: 150%;
+        display: block;
+        padding: 5px 20px;
+ }
 #cssmenu ul li ul li{
   width: 200px;
 }
@@ -233,9 +247,9 @@ border-radius: 5px;
 
 
 
-#cssmenu ul ul li:first-child > a { border-top: 1px solid #ff0000; }
+/* #cssmenu ul ul li:first-child > a { border-top: 1px solid #ff0000; } */
         #cssmenu ul ul li:hover > a { background: #ff0000; }
-
+        #cssmenu ul ul li:hover > span { background: #ff0000; }
         #cssmenu ul ul li:last-child > a {
           border-radius: 0 0 3px 3px;
           box-shadow: 0 1px 0 #ff0000; 
@@ -253,6 +267,14 @@ border-radius: 5px;
  #cssmenu ul li:hover > a, #cssmenu ul li.active > a {
       background: #ff0000;
       color: #FFF;
+      transform: scale(1.1);
+      transition: all ease-in-out 0.3s;
+}
+#cssmenu ul li:hover > span, #cssmenu ul li.active > span {
+      background: #ff0000;
+      color: #FFF;
+      transition: all ease-in-out 0.3s;
+      transform: scale(1.1) translateX(-50px);
 }
 .burgerMenuItems{
   display: flex;
@@ -302,6 +324,7 @@ border-radius: 5px;
   border: 1px solid #1F6521;
   cursor: pointer;
 }
+
 .fab1 {
   position: relative;
   
@@ -370,14 +393,15 @@ font-weight: bold;
 }
 
 .fab:hover {
-  background: #ffffffcf;
-   box-shadow: 0 0px 20px 7px #ffffff;
-   
+  background: #ffffff;
+   box-shadow: 0 0px 10px 7px #60892f94;
+   transform: scale(1.2);
 }
 .fab1:hover {
- background: #ffffffcf;
-   box-shadow: 0 0px 20px 7px #ffffff;
-}
+  background: #ffffff;
+   box-shadow: 0 0px 10px 7px #86c2328e;
+transform: scale(1.2);
+  }
 
 
 .fab svg{
@@ -405,16 +429,18 @@ font-weight: bold;
   position: absolute;
   bottom: -3rem;
   right: 0;
-  width: 10rem;
-  height: 10rem;
+  width: 1rem;
+  height: 1rem;
   transition: all 0.3s ease;
   transform-origin: bottom right;
   transform: scale(0);
+  z-index: 5;
 }
 
 
 .fab-checkbox:checked ~ .fab-wheel {
   transform: scale(1);
+  
 }
 
 .fab-action {
@@ -431,6 +457,7 @@ font-weight: bold;
   box-shadow: 0 0.1rem 1rem rgba(24, 66, 154, 0.82);
   transition: all 1s ease;
   opacity: 0;
+  
 }
 .fab-action1 {
   position: absolute;
@@ -458,21 +485,21 @@ font-weight: bold;
 
 .fab-wheel .fab-action-1 {
 right: 0;
-  top: 8rem;
+  top: 0;
  
 }
 
 .fab-wheel .fab-action-2 {
   right: 0;
-  top: 11.25rem;
+  top: 3.5rem;
 }
 .fab-wheel .fab-action-3 {
   right: 0;
-  top: 14.5rem;
+  top: 7rem;
 }
 .fab-wheel .fab-action-4 {
   right: 0;
-  top: 17.75rem;
+  top: 10.5rem;
 }
 .fab-wheel .fab-action-1:hover, .fab-wheel .fab-action-2:hover, .fab-wheel .fab-action-3:hover, .fab-wheel .fab-action-4:hover{
   transform: scale(1.1);
@@ -601,7 +628,7 @@ height: 60px;
 }
 
 .cstmSubHeader {
-  
+  z-index: 4;
   color: #AF0707;
   text-shadow: 0px 0px 1px #ffffff;
   filter: invert(0%) sepia(0%) saturate(500%) hue-rotate(354deg) brightness(100%) contrast(100%);
@@ -1281,7 +1308,7 @@ width: 10%;}
   position: absolute;
   bottom: 0rem;
   left: -1rem;
-  width: 4rem;
+  width: max-content;
   height: 4rem;
   background: rgba(250, 53, 53, 0.726);
   border-radius: 50%;
