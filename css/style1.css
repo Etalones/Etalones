@@ -1386,9 +1386,8 @@ font-weight: bold;
   position: absolute;
   bottom: 0;
   right: 0;
-
-  width: 10rem;
-  height: 10rem;
+  width: 1rem;
+  height: 1rem;
   transition: all 0.3s ease;
   transform-origin: bottom right;
   transform: scale(0);
@@ -1405,21 +1404,21 @@ font-weight: bold;
 }
 
 .fab-wheel .fab-action-1 {
-  right: -2rem;
-  top: 1rem;
+  right: -1.5rem;
+  top: -7rem;
 }
 
 .fab-wheel .fab-action-2 {
   right: 2rem;
-  top: 2rem;
+  top: -6rem;
 }
 .fab-wheel .fab-action-3 {
-  right: 5rem;
-  top: 4.5rem;
+  right: 4.5rem;
+  top: -3.8rem;
 }
 .fab-wheel .fab-action-4 {
-  right: 6.5rem;
-  top: 8.25rem;
+  right: 5rem;
+  top: -0.2rem;
 }
 /* конец соц сетей в навигации */
   .burgerMenu{
