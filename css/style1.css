@@ -166,14 +166,15 @@ border-radius: 5px;
 
  #burgermenu ul li:hover > a, #burgermenu ul li.active > a {
       
-      backdrop-filter: blur(10px);
+      
       color: #FFF;
+      filter:drop-shadow(2px 2px 20px #5b0d0d) ;
 }
     #burgermenu ul li.has-sub > a:after {
       content: '+';
-      background: #ff000062;
+      
       margin-left: 5px; 
-      border-radius: 50px 50px 50px 50px;
+      
 }
     #burgermenu ul li.last ul {
       left: auto;
