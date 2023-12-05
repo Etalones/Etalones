@@ -37,3 +37,39 @@ window.onscroll = function () {
     scrollToTopBtn.style.display = "none";
   }
 };
+
+
+
+
+
+// ----------------------------Carousel--------------------------------------------
+
+// let ul = document.querySelector(".page-main__products-list");
+// document.querySelector(".next").addEventListener("click", function () {
+//   ul.insertBefore(ul.lastElementChild, ul.firstElementChild);
+// });
+// document
+//   .querySelector(".prev")
+//   .addEventListener("click", function () {
+//     ul.appendChild(ul.firstElementChild);
+//   });
+
+let ul = document.querySelector(".page-main__products-list");
+
+function nextButtonClick() {
+  ul.insertBefore(ul.lastElementChild, ul.firstElementChild);
+}
+
+document.querySelector(".next").addEventListener("click", nextButtonClick);
+
+document.querySelector(".prev").addEventListener("click", function () {
+  ul.appendChild(ul.firstElementChild);
+});
+
+// Автоматическое нажатие кнопки "next" каждую секунду
+setInterval(nextButtonClick, 3000);
+
+
+
+
+

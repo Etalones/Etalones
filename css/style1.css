@@ -4,6 +4,7 @@
   --linear-gradient-grey:linear-gradient(0deg, rgba(172,172,172,1) 0%, rgb(255, 255, 255) 100%);
   --border-menu:#ffeaea5e;
   --green: #53900F;
+  --bg-button: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(0,11,13,0.7904411764705882) 100%)
 }
 
 
@@ -956,7 +957,7 @@ height: 60px;
     background-color: #252525;
 }
 .social-buttons {
-  
+  justify-content: center;
   display: flex;
 gap: 15px;
   align-items: center;
@@ -1262,6 +1263,124 @@ width: 10%;}
   align-self: center;
   padding:5px 30px;
 }
+
+
+
+/* carousel */
+
+
+/* Общие стили */
+.carousel {
+  margin: auto auto;
+  position: relative;
+  padding: 10px 0px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+  width: 60%;
+    box-shadow: 1px 1px 10px #0000004a;
+}
+
+.carousel>.mi {
+  width: max-content;
+  height: max-content;
+  display: block;
+}
+
+.arrow {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  background: #ddd;
+  border: 1px solid var(--bg-button);
+  font-size: 24px;
+  line-height: 24px;
+  color: #0d0d0d;
+  font-size: 30px;
+  display: block;
+  height: 100%;
+  transition: all ease-in-out 0.3s;
+  text-shadow:  1px 1px rgba(255, 255, 255, 0.371)
+}
+
+
+
+.next:hover {
+  transform: translateX(-2px) scaleX(1.1);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.prev:hover {
+  transform: translateX(2px) scaleX(1.1);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.page-main__products-list {
+  display: flex;
+  transition: transform 0.5s ease; /* добавляем плавность для свойства transform */
+}
+
+.prev {
+  left: 0;
+  border-radius: 15px 0 0 15px ;
+    backdrop-filter: blur(8px);
+  background-color: rgba(156,156,156,0.4);
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(237,242,204,0) 100%);
+box-shadow: -0.5px -0.5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 0 15px 15px 0;
+     backdrop-filter: blur(8px);
+  background-color: rgba(156,156,156,0.4);
+background: rgb(167, 167, 167);
+background: linear-gradient(90deg, rgba(237,242,204,0) 0%, rgba(0,0,0,0.5) 100%);
+box-shadow: -0.5px -0.5px 25px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.gallery {
+  height: max-content;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery ul {
+  display: flex;
+  gap: 50px;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+/* Медиа-запрос для мобильных устройств с разрешением до 400px */
+@media screen and (max-width: 798px) {
+  .carousel {
+    width: 100%; /* Ширина на мобильных устройствах будет 100% */
+    box-sizing: border-box; /* Учитываем отступы и границы в общей ширине элемента */
+    padding: 10px; /* Уменьшаем внутренние отступы для лучшего отображения на маленьких экранах */
+  }
+
+  .gallery ul {
+    gap: 10px; /* Уменьшаем расстояние между элементами */
+  }
+}
+
+
  /* Стили для галочки */
      
 
