@@ -48,26 +48,84 @@ window.onscroll = function () {
 // document.querySelector(".next").addEventListener("click", function () {
 //   ul.insertBefore(ul.lastElementChild, ul.firstElementChild);
 // });
-// document
-//   .querySelector(".prev")
-//   .addEventListener("click", function () {
-//     ul.appendChild(ul.firstElementChild);
-//   });
+// document.querySelector(".prev").addEventListener("click", function () {
+//   ul.appendChild(ul.firstElementChild);
+// });
 
-let ul = document.querySelector(".page-main__products-list");
+// Получаем ссылку на элемент, в который мы хотим добавить новый элемент
+var carouselCSTM = document.querySelector(".page-main__products-list");
 
+// Функция для перемещения вперед
 function nextButtonClick() {
-  ul.insertBefore(ul.lastElementChild, ul.firstElementChild);
+  carouselCSTM.insertBefore(
+    carouselCSTM.lastElementChild,
+    carouselCSTM.firstElementChild
+  );
 }
 
+// Добавляем обработчик события на кнопку "next"
 document.querySelector(".next").addEventListener("click", nextButtonClick);
 
+// Добавляем обработчик события на кнопку "prev"
 document.querySelector(".prev").addEventListener("click", function () {
-  ul.appendChild(ul.firstElementChild);
+  carouselCSTM.appendChild(carouselCSTM.firstElementChild);
 });
 
 // Автоматическое нажатие кнопки "next" каждую секунду
 setInterval(nextButtonClick, 3000);
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let carouselCSTM = document.querySelector(".page-main__products-list");
+
+//   if (carouselCSTM) {
+//     function nextButtonClick() {
+//       carouselCSTM.insertBefore(
+//         carouselCSTM.lastElementChild,
+//         carouselCSTM.firstElementChild
+//       );
+//     }
+
+//     document.querySelector(".next").addEventListener("click", nextButtonClick);
+
+//     document.querySelector(".prev").addEventListener("click", function () {
+//       carouselCSTM.appendChild(carouselCSTM.firstElementChild);
+//     });
+
+//     // Автоматическое нажатие кнопки "next" каждую секунду
+//     setInterval(nextButtonClick, 3000);
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let carouselCSTM = document.querySelector(".page-main__products-list");
+
+//   if (carouselCSTM) {
+//     function moveSlide(forward = true) {
+//       const firstSlide = carouselCSTM.firstElementChild;
+//       const lastSlide = carouselCSTM.lastElementChild;
+
+//       if (forward) {
+//         carouselCSTM.insertBefore(lastSlide, firstSlide);
+//       } else {
+//         carouselCSTM.appendChild(firstSlide);
+//       }
+//     }
+
+//     document.querySelector(".next").addEventListener("click", function () {
+//       moveSlide();
+//     });
+
+//     document.querySelector(".prev").addEventListener("click", function () {
+//       moveSlide(false);
+//     });
+
+//     // Автоматическое переключение слайдов каждые 3 секунды
+//     setInterval(function () {
+//       moveSlide();
+//     }, 3000);
+//   }
+// });
+console.log("work");
 
 
 
