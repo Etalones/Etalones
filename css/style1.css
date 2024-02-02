@@ -1640,6 +1640,7 @@ border: none;
 /* popUp */
 
 #popUpWrapper{
+  display: none;
   box-sizing: border-box;
   z-index: 9999;
   position: fixed;
