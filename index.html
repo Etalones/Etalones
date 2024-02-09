@@ -54,11 +54,11 @@
 
     <!-- <script defer src="./js/scrollNavbar.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
       integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"></script> -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -68,6 +68,7 @@
       referrerpolicy="no-referrer"></script>
     <script defer src="./js/selectTom.js"></script>
     <script defer src="./js/scrollNavbar.js"></script>
+    <script defer src="./js/popUp.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -1877,7 +1878,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="fw-bold text-center">Диана</h5>
-                    <p class="text-muted text-center">+48576706977</p>
+                    <p class="text-muted text-center">+48543396182</p>
                     <ul
                       class="list-unstyled mb-0 d-flex justify-content-center gap-2">
                       <a
@@ -1887,13 +1888,13 @@
                         <i class="telegramAnim bi bi-telegram fs-2"></i>
                       </a>
                       <a
-                        href="tel:+48576706977"
+                        href="tel:+48543396182"
                         target="_blank"
                         class="px-1 iconCustom d-block">
                         <i class="bi bi-phone-vibrate fs-2"></i>
                       </a>
                       <a
-                        href="https://wa.me/48576706977"
+                        href="https://wa.me/37360278039"
                         target="_blank"
                         class="px-1 iconCustom d-block">
                         <i class="whatsAppAnim bi bi-whatsapp fs-2"></i>
@@ -2226,10 +2227,21 @@
         </div>
       </div>
       <div id="popUpWrapper">
-        <img id="closePopUp" src="./img/svg/closeAnket.svg" alt="close" />
-        <div class="d-flex" id="popUpBody">
-          <div class="d-flex">
-            <img class="p-3" src="./img/images/100euro.jpg" alt="" />
+        <!-- <div class="backgroundImage"></div> -->
+        <img class="popup-close" src="./img/svg/closeAnket.svg" alt="close" />
+        <span class="popUpHeader">Зарабатываешь 10-11 евро в час?<br>Не устраивают условия фирмы в которой работаешь?</span>
+        <a id="showMoreAction" >Узнать подробнее</a>
+        <div  id="popUpBody">
+          <div class="popUpH1">
+            <p>Повысь свою зароботную плату минимум на<br> <strong>180€</strong> ежемесячно!!!</p>
+          </div>
+          
+          <div class="popUpH2">
+            <p ><strong>+500€ БОНУСОМ</strong><br> при успешном договоре</p>
+            
+          </div>
+          <div>
+           
           </div>
         </div>
       </div>
@@ -2256,5 +2268,6 @@
           d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
       </svg>
     </button>
+    
   </body>
 </html>
