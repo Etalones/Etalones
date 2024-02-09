@@ -1650,7 +1650,7 @@ border: none;
   left: 0;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 30px;
   /* margin: auto; */
   height: fit-content;
   background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(160,6,6,1) 0%, rgba(226,24,24,1) 90% );
@@ -1663,19 +1663,14 @@ justify-content: center;
 .backgroundImage{
   position: absolute;
   width: 100%;
-  /* left: 0;
-  right: 0; */
+  height: 100%;
+ bottom: 0;
   z-index: -1;
   display: block;
   background-image: url('../img/images/euroInHand.jpg');
-  width: 1200px;
-  height: 800px;
+opacity: 0.5;
   background-repeat: no-repeat;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(1px);
+
 }
 .popUpHeader{
   color: white;
@@ -1713,18 +1708,7 @@ justify-content: center;
   width: fit-content;
   text-shadow: 1px 1px #00000057;
 }
-/* .popUpH1::after{
-  z-index: -1;
-   content: "";
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/images/euroInHand.jpg) no-repeat left 90%;
-   background-size: 20%;
-   
-} */
+
 #popUpWrapper strong{
   font-size: 25px;
   font-weight:600;
@@ -1743,8 +1727,13 @@ background-clip: text;
 }
 
 @media(max-width:978px){
-  #popUpWrapper{
-    
+  #popUpWrapper p{
+    font-size: 1rem;
+    padding: 15px;
+  }
+  .popUpHeader{
+    padding-top: 35px;
+    font-size: 18px;
   }
 }
 .popup-close{
